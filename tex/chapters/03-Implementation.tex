@@ -1,0 +1,26 @@
+\chapter{Implementation}
+\label{ch:nc_analysis}
+\section{Feedback}
+Kapitel 2 Implementation und Durchführung
+In diesem Kapitel möchte ich auf die im Zuge dieser Arbeit verwendeten Techniken erklären und aufzeigen wie ich zu den in Kapitel 3 beschriebenen Ergebnissen gekommen bin, sowie welche Probleme sich dabei in den Weg gestellt haben.
+
+Das Bouncing Ball Szenario
+1D vs 2D
+Im 1-Dimensionalen Bouncing Ball Szenario haben wir einen Ball ohne Ausdehnung (also eigentlich ein Punkt aber diese Unterscheidung ist für unsere Zwecke irrelevant) mit einer Position xb und einer konstanten Geschwindigkeit v. Dieser springt zwischen den Grenzen x1=-1 und x2=1 hin und her, also immer wenn die Position des Balls eine der Grenzen annimmt, wird die Geschwindigkeit invertiert v := -v. Also genau so wie man es sich vorstellt.
+Unser 2-Dimensionales Bouncing Ball Szenario ist ganz Analog, der Ball hat eine Position xb,yb mit ebenfalls konstanter Geschwindigkeit vx, vy, welcher nun zwischen den 4 Grenzen x1=-1, x2=1 und y1=-1, y2=1 umherspringt. Nimmt nun eine Koordinate des Balls eine der Grenzen an wird die entsprechende Koordinate invertiert, also  v= vx,vy = -vx,vy beziehungsweise vx,-vy. 
+Bilder von 1D vs 2D
+
+Das 1D Szenario habe ich hauptsächlich verwendet um mich einzuarbeiten und zurechtzufinden, da es unter anderem mit weniger Neuronen erlernt werden kann und so die Aktivierungen der einzelnen Gates auch übersichtlicher sind. Der Hauptvorteil und warum das 1D Szenario auch für diese Ausarbeitung wichtig ist, das unter hinzunahme der Zeitachse aussagekräftige Diagramme erstellt werden können, anhand derer einige Trainingseffekte und Verläufe veranschaulicht werden können. Entsprechende Analysen konnten vom 2D Fall auch gemacht werden, wenn man sah wie sich eine Linie  oder ein Ball mit Verzögerung entsprechend über den Bildschirm bewegt, die resultierenden Bilder sind jedoch eher unübersichtlich. Das 2D Szenario hingegen ist das für unsere Untersuchungen interessantere, da es mehr Events gibt, die auch in komplexernen Beziehungen zueinander stehen, hierzu mehr in Kaptel 3.999.
+
+Das Training des Bouncing Verhaltens
+Das interessante am Bouncing Ball Szenario ist natürlich nicht die gleichförmige Bewegung, sondern das nicht-lineare Verhalten beim Abprallen. Dieses wollen wir unserem LSTM Netzwerk möglichst genau erlernen und haben dazu einige Techniken angewendet. 
+
+Reaktives vs vorhersehendes Verhalten
+1D mit 1b Zelle
+
+RNN Annäherung vs echte nichtlinearität
+Random vs nicht Random, nur periodisch gelernt
+Feedback für random, erklären warum es nicht funkltioniert hat,
+Feedback, Zittern erklären für Input außerhalb des eigenen Raums
+Schritte damit es funktioniert, feedback annäherung, hat nicht geholfen
+Random diskretisiert um numerisch genau definiertes Rand verhalten zu haben

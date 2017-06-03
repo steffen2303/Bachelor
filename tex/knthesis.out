@@ -1,0 +1,85 @@
+\BOOKMARK [0][-]{chapter.1}{Einf\374hrung}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Grundlagen des Shibboleth System}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Entwicklung}{chapter.2}% 3
+\BOOKMARK [1][-]{section.2.2}{Ziele und Vorteile}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.3}{Das Shibboleth Consortium}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.4}{Security Assertion Markup Language}{chapter.2}% 6
+\BOOKMARK [2][-]{subsection.2.4.1}{\334bersicht \374ber SAML}{section.2.4}% 7
+\BOOKMARK [2][-]{subsection.2.4.2}{Vorteile}{section.2.4}% 8
+\BOOKMARK [2][-]{subsection.2.4.3}{Assertion}{section.2.4}% 9
+\BOOKMARK [2][-]{subsection.2.4.4}{Protokolle}{section.2.4}% 10
+\BOOKMARK [2][-]{subsection.2.4.5}{Bindings}{section.2.4}% 11
+\BOOKMARK [2][-]{subsection.2.4.6}{Profil}{section.2.4}% 12
+\BOOKMARK [1][-]{section.2.5}{Single Sign-On}{chapter.2}% 13
+\BOOKMARK [0][-]{chapter.3}{Die Shibboleth Software}{}% 14
+\BOOKMARK [1][-]{section.3.1}{Grundfunktionalit\344t}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.2}{Der Shibboleth Prozess}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.3}{Authentifizierung beim Identity Provider}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.4}{User Session}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.5}{Metadaten}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.6}{User Attributes}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.7}{Relying party}{chapter.3}% 21
+\BOOKMARK [0][-]{chapter.4}{Multifaktorielle Authentifizierung}{}% 22
+\BOOKMARK [1][-]{section.4.1}{Das Authentifizierungsverfahren}{chapter.4}% 23
+\BOOKMARK [1][-]{section.4.2}{Gefahren im Netz}{chapter.4}% 24
+\BOOKMARK [2][-]{subsection.4.2.1}{Phishing}{section.4.2}% 25
+\BOOKMARK [2][-]{subsection.4.2.2}{Man-in-the-Middle-Angriff}{section.4.2}% 26
+\BOOKMARK [2][-]{subsection.4.2.3}{Man-in-Browser-Angriff}{section.4.2}% 27
+\BOOKMARK [2][-]{subsection.4.2.4}{Simple Angriffmethoden}{section.4.2}% 28
+\BOOKMARK [2][-]{subsection.4.2.5}{Serverseitiger Angriff}{section.4.2}% 29
+\BOOKMARK [1][-]{section.4.3}{Die Schw\344che der einfaktoriellen Authentifizierung}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.4}{Das multifaktorielle Authentifizierungsverfahren}{chapter.4}% 31
+\BOOKMARK [2][-]{subsection.4.4.1}{Der Wissens-Faktor}{section.4.4}% 32
+\BOOKMARK [2][-]{subsection.4.4.2}{Eigentums-Faktor}{section.4.4}% 33
+\BOOKMARK [2][-]{subsection.4.4.3}{Inh\344renz-Faktor}{section.4.4}% 34
+\BOOKMARK [2][-]{subsection.4.4.4}{Andere Faktoren}{section.4.4}% 35
+\BOOKMARK [2][-]{subsection.4.4.5}{Zweifaktorauthentifizierung}{section.4.4}% 36
+\BOOKMARK [1][-]{section.4.5}{Implementation}{chapter.4}% 37
+\BOOKMARK [1][-]{section.4.6}{Vorteile}{chapter.4}% 38
+\BOOKMARK [1][-]{section.4.7}{Nachteile}{chapter.4}% 39
+\BOOKMARK [1][-]{section.4.8}{Fazit}{chapter.4}% 40
+\BOOKMARK [0][-]{chapter.5}{Der Service und der Identity Provider}{}% 41
+\BOOKMARK [1][-]{section.5.1}{Beschreibung}{chapter.5}% 42
+\BOOKMARK [2][-]{subsection.5.1.1}{Anforderungen f\374r den Service Provider}{section.5.1}% 43
+\BOOKMARK [2][-]{subsection.5.1.2}{Anforderungen f\374r den Identity Provider}{section.5.1}% 44
+\BOOKMARK [1][-]{section.5.2}{Der Service Provider}{chapter.5}% 45
+\BOOKMARK [2][-]{subsection.5.2.1}{Verzeichnis}{section.5.2}% 46
+\BOOKMARK [1][-]{section.5.3}{Der Identity Provider}{chapter.5}% 47
+\BOOKMARK [2][-]{subsection.5.3.1}{Die Verzeichnisstruktur}{section.5.3}% 48
+\BOOKMARK [2][-]{subsection.5.3.2}{Konfiguration}{section.5.3}% 49
+\BOOKMARK [2][-]{subsection.5.3.3}{Beans}{section.5.3}% 50
+\BOOKMARK [1][-]{section.5.4}{Die Authentifizierung beim Identity Provider}{chapter.5}% 51
+\BOOKMARK [2][-]{subsection.5.4.1}{Spring Web Flow}{section.5.4}% 52
+\BOOKMARK [2][-]{subsection.5.4.2}{M\366glichkeiten der Authentifizierung}{section.5.4}% 53
+\BOOKMARK [0][-]{chapter.6}{\334bersicht \374ber Dienste der Uni}{}% 54
+\BOOKMARK [1][-]{section.6.1}{\334bersicht}{chapter.6}% 55
+\BOOKMARK [1][-]{section.6.2}{Universit\344ts-interne Anwendungen}{chapter.6}% 56
+\BOOKMARK [1][-]{section.6.3}{externe Anwendungen}{chapter.6}% 57
+\BOOKMARK [0][-]{chapter.7}{Evualation des m\366glichen Einsatzes}{}% 58
+\BOOKMARK [1][-]{section.7.1}{Auswahl des Zweitfaktors}{chapter.7}% 59
+\BOOKMARK [2][-]{subsection.7.1.1}{SMS}{section.7.1}% 60
+\BOOKMARK [2][-]{subsection.7.1.2}{Telefon Anruf}{section.7.1}% 61
+\BOOKMARK [2][-]{subsection.7.1.3}{Email}{section.7.1}% 62
+\BOOKMARK [2][-]{subsection.7.1.4}{Hardware Token}{section.7.1}% 63
+\BOOKMARK [2][-]{subsection.7.1.5}{Software Token}{section.7.1}% 64
+\BOOKMARK [2][-]{subsection.7.1.6}{Remote User}{section.7.1}% 65
+\BOOKMARK [2][-]{subsection.7.1.7}{TAN-Liste}{section.7.1}% 66
+\BOOKMARK [2][-]{subsection.7.1.8}{Biometrische Verfahren}{section.7.1}% 67
+\BOOKMARK [2][-]{subsection.7.1.9}{Kerberos}{section.7.1}% 68
+\BOOKMARK [2][-]{subsection.7.1.10}{Duo}{section.7.1}% 69
+\BOOKMARK [2][-]{subsection.7.1.11}{Digitale Zertifikate}{section.7.1}% 70
+\BOOKMARK [2][-]{subsection.7.1.12}{IP-basierte Authentifizierung}{section.7.1}% 71
+\BOOKMARK [1][-]{section.7.2}{Fazit}{chapter.7}% 72
+\BOOKMARK [0][-]{chapter.8}{Installation und Konfiguration des Test Identity Providers}{}% 73
+\BOOKMARK [1][-]{section.8.1}{Installation}{chapter.8}% 74
+\BOOKMARK [1][-]{section.8.2}{Konfiguration}{chapter.8}% 75
+\BOOKMARK [2][-]{subsection.8.2.1}{allgemeine Konfigurationsschritte}{section.8.2}% 76
+\BOOKMARK [2][-]{subsection.8.2.2}{Konfiguration der Authentifizierung}{section.8.2}% 77
+\BOOKMARK [2][-]{subsection.8.2.3}{Das Loginverfahren}{section.8.2}% 78
+\BOOKMARK [0][-]{chapter.9}{Zusammenfassung und Ausblick}{}% 79
+\BOOKMARK [1][-]{section.9.1}{Problem}{chapter.9}% 80
+\BOOKMARK [1][-]{section.9.2}{Geeignete Dienste}{chapter.9}% 81
+\BOOKMARK [1][-]{section.9.3}{Mehrfaktorielle Authentifizierung}{chapter.9}% 82
+\BOOKMARK [1][-]{section.9.4}{Ausblick}{chapter.9}% 83
+\BOOKMARK [0][-]{chapter.10}{Glossar}{}% 84
+\BOOKMARK [0][-]{chapter*.2}{Abbildungsverzeichnis}{}% 85
