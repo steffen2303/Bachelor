@@ -1,0 +1,84 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Beispieldatei zur Verwendung des
+%% LaTeX-Style fuer das Erstellen von Abschlussarbeiten
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Author(s):
+%% - Michael Hoefling, hoefling@informatik.uni-tuebingen.de
+%% - Mark Schmidt, mark-thomas.schmidt@uni-tuebingen.de
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt,headsepline,oneside,ngerman]{scrreprt}
+
+% Hier kann man weitere hilfreiche Latex-Packages einbinden
+% z.B. usepackage{url}
+\usepackage[utf8]{inputenc}
+\usepackage[boxed]{algorithm}
+\usepackage{algorithmic_sok}
+\usepackage{amssymb}
+\usepackage[ngerman]{babel}
+\usepackage{url}
+% Lehrstuhlvorlage einbinden
+% Arbeitstyp als Option angeben (Diplomarbeit ist Standard), z.B.
+% Bachelorarbeit: [bachelorarbeit]
+% Studienarbeit: [studienarbeit]
+% Masterarbeit: [masterarbeit]
+% Seminarausarbeitung: [seminararbeit]
+\usepackage[bachelorarbeit]{knthesis}
+
+% hilfreiche Makros einbinden
+\input{config/macrosGeneral}
+\input{config/macrosACM}
+
+\begin{document}
+
+% Pfad zu Abbildungen 
+\graphicspath{{figures/}}
+
+% Konfiguration des Latex-Style laden
+\input {config/Configuration}
+\pagestyle{headings}
+
+
+
+% Ab hier folgt der wichtige Inhalt der Arbeit.
+% Die Gliederung dient nur als Vorschlag und muss je nach
+% anzufertigender Arbeit angefertigt werden.
+\input{chapters/01-Introduction}
+\input{chapters/02-Grundlagen}
+
+%\input{chapters/03-Implementation}
+%\input{chapters/04-Untersuchung}
+%\input{chapters/05-Ergebnisse}
+%\input{chapters/06-Ende}
+%\input{chapters/07-Appendix}
+%\input{chapters/08-Glossar}
+
+
+% Ab hier kommt der Anhang (optional)
+%\appendix
+%\input{chapters/11-appendix}
+
+% Literaturverzeichnis
+\cleardoublepage
+\begin{thebibliography}{xxxxx}
+\bibitem{bib:neuron}\url{https://online.science.psu.edu/bisc004_activewd001/node/1907} (abgerufen am 10.05.2017)
+\bibitem{bib:aneuron}\url{https://de.wikipedia.org/wiki/K%C3%BCnstliches_Neuron} (abgerufen am 10.05.2017)
+\bibitem{bib:mlp}\url{https://de.wikipedia.org/wiki/Neuronales_Netz#/media/File:Neural_network.svg} (abgerufen am 10.05.2017)
+\bibitem{bib:}\url{} (abgerufen am 10.05.2017)
+\bibitem{bib:}\url{} (abgerufen am 10.05.2017)
+\bibitem{bib:}\url{} (abgerufen am 10.05.2017)
+\bibitem{bib:}\url{} (abgerufen am 10.05.2017)
+\bibitem{bib:}\url{} (abgerufen am 10.05.2017)
+\bibitem{bib:}\url{} (abgerufen am 10.05.2017)
+
+
+\end{thebibliography}
+\renewcommand{\bibname}{Literaturverzeichnis}
+\bibliographystyle{abbrv}
+%\bibliography{literature}
+
+% Abbildungsverzeichnis (optional)
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+\listoffigures
+\end{document}

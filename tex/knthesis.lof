@@ -1,0 +1,6 @@
+\select@language {ngerman}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Schematische Darstellung eines biologischen Neuron \cite {bib:neuron}}}{2}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Schematische Darstellung eines k\IeC {\"u}nstlichen Neuron \cite {bib:aneuron}}}{3}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Ein Multilayer Perceptron mit 2 Inputneuronen(gr\IeC {\"u}n), einem Hidden Layer mit 5 Neuronen(blau) und einem einzelnen Outputneuron(gelb). \cite {bib:mlp}}}{3}

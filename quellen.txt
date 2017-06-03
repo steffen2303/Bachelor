@@ -1,0 +1,3 @@
+http://colah.github.io/posts/2015-08-Understanding-LSTMs/ stand 27.02.2017
+
+http://sebastianruder.com/optimizing-gradient-descent/

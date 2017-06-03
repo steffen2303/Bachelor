@@ -1,0 +1,73 @@
+\begin{thebibliography}{10}
+
+\bibitem{Chang01}
+C.-S. Chang.
+\newblock {\em {Performance Guarantees in Communications Networks}}.
+\newblock Springer, 2001.
+
+\bibitem{Cruz91a}
+R.~L. Cruz.
+\newblock {A Calculus for Network Delay, Part I: Network Elements in
+  Isolation}.
+\newblock {\em IEEE Transactions on Information Theory}, 37(1):114--131, Jan.
+  1991.
+
+\bibitem{Cruz91b}
+R.~L. Cruz.
+\newblock {A Calculus for Network Delay, Part II: Network Analysis}.
+\newblock {\em IEEE Transactions on Information Theory}, 37(1):132--141, Jan.
+  1991.
+
+\bibitem{GuBi09}
+A.~Guly\'{a}s, J.~B\'{\i}r\'{o}, and F.~N{\'e}meth.
+\newblock New stochastic network calculus for loss analysis.
+\newblock In {\em Proceedings of the Fourth International ICST Conference on
+  Performance Evaluation Methodologies and Tools}, VALUETOOLS '09, pages
+  38:1--38:10, ICST, Brussels, Belgium, Belgium, 2009. ICST (Institute for
+  Computer Sciences, Social-Informatics and Telecommunications Engineering).
+
+\bibitem{HoMe10}
+D.~Hock, M.~Menth, M.~Hartmann, C.~Schwartz, and D.~Stezenbach.
+\newblock Resilyzer: A tool for resilience analysis in packet-switched
+  communication networks.
+\newblock In B.~M\"uller-Clostermann, K.~Echtle, and E.~Rathgeb, editors, {\em
+  Measurement, Modelling, and Evaluation of Computing Systems and Dependability
+  and Fault Tolerance}, volume 5987 of {\em Lecture Notes in Computer Science},
+  pages 302--306. Springer Berlin Heidelberg, 2010.
+
+\bibitem{Jiang06}
+Y.~Jiang.
+\newblock A basic stochastic network calculus.
+\newblock In {\em Proceedings of the 2006 conference on Applications,
+  technologies, architectures, and protocols for computer communications},
+  SIGCOMM '06, pages 123--134, 2006.
+
+\bibitem{Killat11}
+U.~Killat.
+\newblock Stochastischer network calculus.
+\newblock In {\em Entwurf und Analyse von Kommunikationsnetzen}, pages
+  186--207. Springer, 2011.
+
+\bibitem{LeBoudec04}
+J.-Y. {Le Boudec} and P.~Thiran.
+\newblock {\em {Network Calculus}}.
+\newblock Springer, 2004.
+
+\bibitem{ScZd06}
+J.~B. Schmitt and F.~A. Zdarsky.
+\newblock {The DISCO Network Calculator -- A Toolbox for Worst Case Analysis}.
+\newblock In {\em VALUETOOLS}, 2006.
+
+\bibitem{ScZd08}
+J.~B. Schmitt, F.~A. Zdarsky, and M.~Fidler.
+\newblock {Delay Bounds under Arbitrary Multiplexing: When Network Calculus
+  Leaves You in the Lurch...}
+\newblock In {\em {IEEE} Infocom}, 2008.
+
+\bibitem{ScZd06b}
+J.~B. Schmitt, F.~A. Zdarsky, and I.~Martinovic.
+\newblock {Performance Bounds in Feed-Forward Networks under Blind
+  Multiplexing}.
+\newblock Technical Report 349/06, University of Kaiserslautern, July 2006.
+
+\end{thebibliography}
