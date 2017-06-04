@@ -2,6 +2,6 @@
 \contentsline {chapter}{\numberline {1}Einf{\"u}hrung}{1}
 \contentsline {chapter}{\numberline {2}Grundlagen}{2}
 \contentsline {section}{\numberline {2.1}Neuronale Netze}{2}
-\contentsline {section}{\numberline {2.2}Rekurrente Neuronale Netze}{4}
-\contentsline {section}{\numberline {2.3}Das Vanishing Gradient Problem}{4}
-\contentsline {chapter}{Abbildungsverzeichnis}{6}
+\contentsline {section}{\numberline {2.2}Rekurrente Neuronale Netze}{5}
+\contentsline {section}{\numberline {2.3}Das Vanishing Gradient Problem}{6}
+\contentsline {chapter}{Abbildungsverzeichnis}{8}
