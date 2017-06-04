@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.17)  4 JUN 2017 17:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.17)  4 JUN 2017 19:19
 entering extended mode
 **./knthesis.tex
 (knthesis.tex
@@ -859,11 +859,31 @@ LaTeX Warning: Citation `bib:rnn' on page 5 undefined on input line 72.
 Overfull \vbox (4.39998pt too high) has occurred while \output is active []
 
 
-[5])
+[5]
+
+LaTeX Warning: Citation `bib:rnn' on page 6 undefined on input line 85.
+
+<pics/vgp.jpg, id=45, 618.31pt x 334.24875pt>
+File: pics/vgp.jpg Graphic file (type jpg)
+ <use pics/vgp.jpg>
+Package pdftex.def Info: pics/vgp.jpg used on input line 90.
+(pdftex.def)             Requested size: 299.21013pt x 130.48909pt.
+
+
+LaTeX Warning: Citation `bib:vgp' on page 6 undefined on input line 91.
+
+
+LaTeX Warning: Citation `bib:vgp' on page 6 undefined on input line 91.
+
+)
 Overfull \vbox (4.39998pt too high) has occurred while \output is active []
 
 
 [6 <./pics/rnn.jpg>]
+Overfull \vbox (4.39998pt too high) has occurred while \output is active []
+
+
+[7 <./pics/vgp.jpg>]
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 64.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -892,24 +912,24 @@ ber _ of _ neurons$ \T1/cmr/m/n/12 (ab-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
-[]$\T1/cmtt/m/n/12 http : / / www . informatikseite . de / neuro / node24 . php
-$ \T1/cmr/m/n/12 (ab-ge-ru-fen am
+Overfull \hbox (144.68935pt too wide) in paragraph at lines 70--71
+[]$\T1/cmtt/m/n/12 www . wildml . com / 2015 / 09 / recurrent-[]neural-[]networ
+ks-[]tutorial-[]part-[]1-[]introduction-[]to-[]rnns/$
  []
 
-[7
+[8
 
 
 
 ] (knthesis.lof
 
-LaTeX Warning: Citation `bib:rnn' on page 8 undefined on input line 7.
+LaTeX Warning: Citation `bib:rnn' on page 9 undefined on input line 7.
 
 )
 \tf@lof=\write4
 \openout4 = `knthesis.lof'.
 
- [8
+ [9
 
 
 
@@ -922,10 +942,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6664 strings out of 493333
- 99401 string characters out of 3139188
+ 6671 strings out of 493333
+ 99493 string characters out of 3139188
  262231 words of memory out of 3000000
- 10015 multiletter control sequences out of 15000+200000
+ 10021 multiletter control sequences out of 15000+200000
  15828 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  48i,9n,66p,8821b,288s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -947,9 +967,9 @@ amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on knthesis.pdf (10 pages, 313564 bytes).
+Output written on knthesis.pdf (11 pages, 354251 bytes).
 PDF statistics:
- 344 PDF objects out of 1000 (max. 8388607)
+ 350 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

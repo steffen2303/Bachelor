@@ -5,3 +5,4 @@
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Schematische Darstellung einer M\IeC {\"o}glichkeit, ein k\IeC {\"u}nstliches Neuron zu simulieren \cite {bib:aneuron}}}{3}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Ein Multilayer Perceptron mit 2 Inputneuronen(gr\IeC {\"u}n), einem Hidden Layer mit 5 Neuronen(blau) und einem einzelnen Outputneuron(gelb). \cite {bib:mlp}}}{3}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Um Backpropagation f\IeC {\"u}r ein rekurrentes Netz zu benutzen, muss man es durch die Zeit auffallten. \cite {bib:rnn}}}{6}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Das Problem vom verschwindendem Gradienten in einem rekurrenten Netz. Ein Fehler im Zeitschritt 1 erzeugt einen Gradienten, der aber auf die folgenden Zeitschritte immer weniger Einfluss hat.\cite {bib:vgp}}}{7}

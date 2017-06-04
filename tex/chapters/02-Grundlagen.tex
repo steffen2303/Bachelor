@@ -83,5 +83,12 @@ Da diese neuen rekurrenten Inputs auch wieder gewichtet verarbeitet werden, müs
 	\delta_{h}^{t} = \varphi_{h}'(net_{h}^{t})(\sum_{k \in K}w_{hk}\delta^{t}_{k}+\sum_{h' \in H'}w_{hh'}\delta^{t+1}_{h'})
 \end{gather}
 Berechnung des Delta Fehlers für jedes Neuron des Outputlayers(oben) und der versteckten Layer (unten). \\ \cite{bib:rnn}
-Den Backpropagation Algorithmus wie bei einem Multilayer Perzeptron anwenden um das Netz zu trainieren 
+Den Backpropagation Algorithmus wie bei einem Multilayer Perzeptron anwenden um das Netz zu trainieren und passende Gewichte, auch für die rekurrenten Verbindungen zu erhalten. Nun hat man ein Neuronales Netz mit einer Art Kurzzeitgedächtnis, welches beim Auswerten des Inputs die Nahe Vergangenheit mit in Betracht zieht. Hat es in der Anwendung aber tiefere Abhängigkeiten, wo ein vergangener Input einen Einfluss auf die fernere Zukunft hat, hat auch das RNN noch Schwierigkeiten: 
 \section{Das Vanishing Gradient Problem}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\textwidth, height=130px]{pics/vgp.jpg}	
+	\caption{Das Problem vom verschwindendem Gradienten in einem rekurrenten Netz. Ein Fehler im Zeitschritt 1 erzeugt einen Gradienten, der aber auf die folgenden Zeitschritte immer weniger Einfluss hat.\cite{bib:vgp}}
+	\label{img:vgp}
+\end{figure}
+Wir haben gesehen wie beim Training eines rekurrenten Netzes über die Bildung des Gradienten geschickt Gewichte gefunden werden, die Probleme lösen können bei denen Abhängigkeiten über die Zeit auftreten. Erstrecken sich diese Abhängigkeiten aber über zu große Zeitraume, tritt das Problem vom verschwindendem Gradienten auf. Ein Fehler zum Zeitpunkt \textit{t} erzeugt einen Gradienten der auch Einfluss auf Fehlerberechnung zu den kommenden Zeitpunkte hat, 
