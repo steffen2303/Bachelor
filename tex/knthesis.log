@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.17)  8 JUN 2017 16:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.17)  8 JUN 2017 22:01
 entering extended mode
 **./knthesis.tex
 (knthesis.tex
@@ -681,7 +681,10 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 ))
 (config/macrosGeneral.tex) (config/macrosACM.tex) (knthesis.aux
 
-LaTeX Warning: Label `bib:' multiply defined.
+LaTeX Warning: Label `eq:err' multiply defined.
+
+
+LaTeX Warning: Label `eq:err' multiply defined.
 
 
 LaTeX Warning: Label `bib:' multiply defined.
@@ -828,12 +831,6 @@ Class scrreprt Warning: \float@addtolists detected!
 
 ]
 chapter 2.
-
-LaTeX Warning: Reference `bib:jannlab' on page 2 undefined on input line 2.
-
-
-LaTeX Warning: Reference `img:1dvs2d' on page 2 undefined on input line 11.
-
 <pics/1dvs2d.jpg, id=15, 1088.56688pt x 925.95938pt>
 File: pics/1dvs2d.jpg Graphic file (type jpg)
  <use pics/1dvs2d.jpg>
@@ -846,11 +843,39 @@ Package pdftex.def Info: pics/1dvs2d.jpg used on input line 14.
 Overfull \vbox (4.39998pt too high) has occurred while \output is active []
 
 
-[3 <./pics/1dvs2d.jpg>])
+[3 <./pics/1dvs2d.jpg>]
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 21.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmss.fd"
+File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
+
+ []
+
+
 Overfull \vbox (4.39998pt too high) has occurred while \output is active []
 
 
-[4]
+[4])
+Overfull \vbox (4.39998pt too high) has occurred while \output is active []
+
+
+[5]
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 62.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -915,7 +940,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--77
  \T1/cmr/m/n/12 (ab-ge-ru-fen am
  []
 
-[5
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
+[]$\T1/cmtt/m/n/12 www . sebastianruder . com / optimizing-[]gradient-[]descent
+/$ \T1/cmr/m/n/12 (ab-ge-ru-fen
+ []
+
+[6
 
 
 
@@ -923,38 +954,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--77
 Overfull \vbox (4.39998pt too high) has occurred while \output is active []
 
 
-[6] (knthesis.aux)
-
-LaTeX Warning: There were undefined references.
-
+[7] (knthesis.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6614 strings out of 493333
- 98352 string characters out of 3139188
- 262205 words of memory out of 3000000
- 9978 multiletter control sequences out of 15000+200000
- 13603 words of font info for 42 fonts, out of 3000000 for 9000
+ 6652 strings out of 493333
+ 99186 string characters out of 3139188
+ 262319 words of memory out of 3000000
+ 10010 multiletter control sequences out of 15000+200000
+ 15828 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  48i,8n,66p,8821b,291s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Steffen\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
 0\ectt1200.pk> <C:\Users\Steffen\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknap
-pen\ec\dpi600\ecsl1200.pk> <C:\Users\Steffen\AppData\Local\MiKTeX\2.9\fonts\pk\
-ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\Users\Steffen\AppData\Local\MiKTeX\2
-.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Steffen\AppData\Lo
-cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk> <C:\Users\Steffe
-n\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\
-Users\Steffen\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1
-440.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on knthesis.pdf (8 pages, 307826 bytes).
+pen\ec\dpi600\ecti1200.pk> <C:\Users\Steffen\AppData\Local\MiKTeX\2.9\fonts\pk\
+ljfour\jknappen\ec\dpi600\ecsx1200.pk> <C:\Users\Steffen\AppData\Local\MiKTeX\2
+.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsl1200.pk> <C:\Users\Steffen\AppData\Lo
+cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\Users\Steffe
+n\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\
+Users\Steffen\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2
+488.pk> <C:\Users\Steffen\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\
+dpi600\ecrm1200.pk> <C:\Users\Steffen\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\
+jknappen\ec\dpi600\ecbx1440.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on knthesis.pdf (9 pages, 341030 bytes).
 PDF statistics:
- 316 PDF objects out of 1000 (max. 8388607)
+ 390 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
