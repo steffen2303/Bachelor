@@ -6,3 +6,5 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Ein Multilayer Perceptron mit 2 Inputneuronen(gr\IeC {\"u}n), einem Hidden Layer mit 5 Neuronen(blau) und einem einzelnen Outputneuron(gelb). \cite {bib:mlp}}}{3}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Um Backpropagation f\IeC {\"u}r ein rekurrentes Netz zu benutzen, muss man es durch die Zeit auffallten. \cite {bib:rnn}}}{6}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Das Problem vom verschwindendem Gradienten in einem rekurrenten Netz. Ein Fehler im Zeitschritt 1 erzeugt einen Gradienten, der aber auf die folgenden Zeitschritte immer weniger Einfluss hat.\cite {bib:vgp}}}{7}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Ein Aufbau einer LSTM-Speicherzelle. 4 rekurrente Neuronen (blau), die die 3 multiplikativen Gates lenken (rot), die das Verhalten der Speicherzelle steuern. \cite {bib:lstm}}}{8}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Der Inhalt der Zelle wird sauber durch die verschiedenen Zeitschritte durch die Gates gelenkt. Kreis bedeutet offenes Gate, ein Querstrich stellt ein geschlossenes Gate dar. \cite {bib:lstm}}}{9}
