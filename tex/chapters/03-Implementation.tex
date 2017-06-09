@@ -4,9 +4,9 @@ Nun da die Grundlagen gelegt sind können wir anfangen zu untersuchen wie ein LS
 \section{Das Bouncing Ball Szenario}
 Das Bouncing Ball Szenario beschreibt einen Ball, der gleichförmig durch die Ebene gleitet bis er an entsprechenden Begrenzungen abprallt. Wir haben die 1- und die 2-dimensionale Version verwendet.
 
-Im 1-D Fall haben wir einen Ball ohne Ausdehnung (also eigentlich ein Punkt aber diese Unterscheidung ist für unsere Zwecke irrelevant) mit einer Position $ x_{b} $ und einer konstanten Geschwindigkeit $  v$. Dieser springt zwischen den Grenzen $ x_{1}=-1 $ und $ x_{2}=1 $ hin und her, also immer wenn die Position des Balls eine der Grenzen annimmt, wird die Geschwindigkeit invertiert $ v := -v $. Also genau so wie man es sich vorstellt.
+Im 1D Fall haben wir einen Ball ohne Ausdehnung (also eigentlich ein Punkt aber diese Unterscheidung ist für unsere Zwecke irrelevant) mit einer Position $ x_{b} $ und einer konstanten Geschwindigkeit $  v$. Dieser springt zwischen den Grenzen $ x_{1}=-1 $ und $ x_{2}=1 $ hin und her, also immer wenn die Position des Balls eine der Grenzen annimmt, wird die Geschwindigkeit invertiert $ v := -v $. Also genau so wie man es sich vorstellt. Der 1D Fall unterteilt sich also in 2 Ereignisse, die "Bewegung nach links" und die "Bewegung nach rechts", wenn man das Bouncen zwischen -1 und 1 als Bewegung auf einer horizontalen Linie nimmt.
 
-Der 2D Fall funktioniert analog, der Ball hat eine Position $ (x_{b}/y_{b}) $, eine konstante Geschwindigkeit $ (v_{x}/v_{y}) $, welcher nun zwischen den 4 Grenzen $ x_{1}=-1 $ und $ x_{2}=1 $, $ y_{1}=-1 $ und $ y_{2}=1 $ hin und her springt. Nimmt nun eine Koordinate des Balls eine der Grenzen an wird die entsprechende Koordinate invertiert, also $ (v_{x}/v_{y}) = (-v_{x}/v_{y}) $ beziehungsweise $ (v_{x}/-v_{y}) $. 
+Der 2D Fall funktioniert analog, der Ball hat eine Position $ (x_{b}/y_{b}) $, eine konstante Geschwindigkeit $ (v_{x}/v_{y}) $, welcher nun zwischen den 4 Grenzen $ x_{1}=-1 $ und $ x_{2}=1 $, $ y_{1}=-1 $ und $ y_{2}=1 $ hin und her springt. Nimmt nun eine Koordinate des Balls eine der Grenzen an wird die entsprechende Koordinate invertiert, also $ (v_{x}/v_{y}) = (-v_{x}/v_{y}) $ beziehungsweise $ (v_{x}/-v_{y}) $. Der 2D Fall unterteilt sich also in 4 Ereignisse, die "Bewegung in Richtung oben-rechts", etc. wenn man das Bouncen zwischen dem Quadrat von (-1/-1) und (1/1) im 2-dimensionalen als Bewegung in einer stehenden Ebene nimmt.
 
 Das 1D-Szenario habe ich hauptsächlich verwendet um mich einzuarbeiten und zurechtzufinden, da es unter anderem mit weniger Neuronen erlernt werden kann und so die Aktivierungen der einzelnen Gates auch übersichtlicher sind. Der Grund warum das 1D-Szenario auch für diese Ausarbeitung wichtig ist, ist das unter Hinzunahme der Zeitachse aussagekräftige Diagramme erstellt werden können, anhand derer einige Trainingseffekte und Verläufe veranschaulicht werden können. Entsprechende Analysen konnten vom 2D-Fall auch gemacht werden, wenn man sah wie sich eine Linie oder ein Ball mit Verzögerung entsprechend über den Bildschirm bewegt, die resultierenden Bilder sind jedoch eher unübersichtlich. Das 2D Szenario hingegen ist das für unsere Untersuchungen interessantere, da es mehr Events gibt, die auch in komplexernen Beziehungen zueinander stehen. In Abbildung \ref{img:1dvs2d} sieht man jeweils 2 Beispiele, zu dem genauen Aufbau des dazu benutzten LSTM Netzes kommen wir in der folgenden Sektion.
 \begin{figure}
@@ -16,7 +16,7 @@ Das 1D-Szenario habe ich hauptsächlich verwendet um mich einzuarbeiten und zure
 	\label{img:1dvs2d}
 \end{figure}
 
-\section{Unser LSTM, Parameter + Testfälle}
+\section{Unser LSTM, Parameter und Testfälle}
 Für unser LSTM-Netz haben sich folgende Parameter als sinnvoll erwiesen:
 \begin{description}	\item[Aktivierungsfunktionen:]\hfill \\ 
 	Zur Ansteuerung der Gates der LSTM-Zellen im Hiddenlayer werden Neuronen mit \textit{Tangens hyperbolicus} als Aktivierungsfunktion verwendet. Für das Outputlayer wird zur Aktivierung die lineare Funktion verwendet, da die Position des Balles gleichverteilt Werte zwischen -1 und 1 annimmt, soll unser Netzoutput dasselbe tun. Anfangs war für das Outputlayer per Defaultoption die \textit{sigmoid}-Funktion zur Aktivierung eingestellt, deren Bild aber nur von 0 bis 1 reicht. Das hatte natürlich nicht funktioniert und für Verwirrung gesorgt, warum denn nur die Hälfte des Problems erlernt wird.  
@@ -27,13 +27,21 @@ Für unser LSTM-Netz haben sich folgende Parameter als sinnvoll erwiesen:
 	\item[Außerdem:]\hfill \\
 	Alle Layer sind mit Bias-Unit, um mit möglichst wenig Neuronen möglichst viel Funktionalität zu erreichen, damit deren Analyse wiederrum möglichst ausgiebig verläuft. Peepholes \cite{bib:lstm2} wurden getestet, hatten in diesem Beispiel keinen sichtbaren Effekt auf das Training und wurden dann weggelassen.  
 \end{description}
-Außerdem wurden verschiedene Testfälle mit verschiedenen Intentionen betrachtet, die ich aber an dieser Stelle vorgreifend definieren möchte:
+Außerdem werden verschiedene Testfälle mit verschiedenen Intentionen betrachtet, die ich an dieser Stelle vorgreifend definieren möchte. Es wurde mit fast allen Kombinationen experimentiert:
 \begin{description}
-	\item[Verschiedene Inputs:]\hfill \\
-	
-	\item[Verschiedene Outputs:]\hfill \\
-	
-	\item[Zufällige Startposition + Geschwindigkeit:]\hfill \\
+	\item[Verschiedene Inputs:]
+	\begin{itemize}
+		\item Position: Der Standard Input
+		\item Noicy Position: 
+		\item Null: 
+		\item Geschwindigkeit:
+	\end{itemize}
+	Der Standart Input in das Netz ist die Position des Balles. 
+	\item[Verschiedene Trainingsziele:]
+	\item Nächste Position: Der Standard Output.
+	\item Geschwindigkeit: Da die Geschwindigkeit bis auf Vorzeichen konstant ist,  kann sich das Netz hier darauf konzentrieren, in welchem Ereignis, also Bewegungsabschnitt es sich befindet, also ob sich der Ball momentan z.B. nach links oben bewegt.  
+	\item Nächstes Event: Es wurde auch getestet wie sich das Netz verhält wenn es selbst vorhersagen soll, welches Event als nächstes ansteht. War erfolgreich auch bei zufälligen Startposition und Geschwindigkeiten, was aber nicht weiter Überraschend ist, das sich das LSTM Netz auf ein lineares Problem, welche Grenze als nächstes getroffen wird, trainieren lässt. Auch aus den Aktivierungen im Netz konnte nichts interessantes gefolgert werden, weswegen das nächste Event als Trainingsziel nicht mehr aufgegriffen wird. 
+	\item[Startposition und Geschwindigkeit:]\hfill \\
 	
 	\item[Feedback:]\hfill \\
 \end{description}

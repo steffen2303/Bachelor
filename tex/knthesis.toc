@@ -2,7 +2,7 @@
 \contentsline {chapter}{\numberline {1}Einf{\"u}hrung}{1}
 \contentsline {chapter}{\numberline {2}Implementation}{2}
 \contentsline {section}{\numberline {2.1}Das Bouncing Ball Szenario}{2}
-\contentsline {section}{\numberline {2.2}Unser LSTM, Parameter + Testf\IeC {\"a}lle}{4}
+\contentsline {section}{\numberline {2.2}Unser LSTM, Parameter und Testf\IeC {\"a}lle}{3}
 \contentsline {section}{\numberline {2.3}Das Training des Bouncing Verhaltens}{5}
 \contentsline {section}{\numberline {2.4}Umfragen zum Thema}{5}
 \contentsline {section}{\numberline {2.5}Feedback}{5}
