@@ -1,10 +1,12 @@
-\chapter{Untersuchung}
+\chapter{Ergebnisse}
 \label{ch:untersuchung}
 
 \section{Verschiedene LSTM }
 
 
 anders als angenommen: zufall war garnicht wichtig. Alles was bestätigt wurde, 2 1D Fälle überlagert
+
+dieser fall den man bekommen hätte mit feedback und zufällig und perfekt trainiert, vllt sogar viel langweiliger, da event tatsächlich nur von position des Balles abhängt, nur ein einzelnes Gewicht, wenn 1 erreicht ausgelöst ohne interaktion. 
 
 
 mit backpropagation im 1D fall, sieht man: Lstm zelle forgetgate ist auf 1. wir bewegen uns nach links. wenn man gradient +1 wählt, kommt dann auf selbe zelle negativer gradient zurück? also um wieder nach links zu gehen muss man erstmal nach rechts gehen. 
