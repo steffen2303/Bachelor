@@ -28,13 +28,13 @@
 \newlabel{img:neuron}{{2.1}{2}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Schematische Darstellung einer M\IeC {\"o}glichkeit, ein k\IeC {\"u}nstliches Neuron zu simulieren \cite  {bib:aneuron}}}{3}}
 \newlabel{img:aneuron}{{2.2}{3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Ein Multilayer Perceptron mit 2 Inputneuronen(gr\IeC {\"u}n), einem Hidden Layer mit 5 Neuronen(blau) und einem einzelnen Outputneuron(gelb). \cite  {bib:mlp}}}{3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Ein Multilayer Perceptron mit m Inputneuronen(gelb), zwei Hidden Layern(blau) und zwei Outputneuronen(gr\IeC {\"u}n). \cite  {bib:mlp}}}{3}}
 \newlabel{img:mlp}{{2.3}{3}}
 \newlabel{eq:act}{{2.1}{4}}
 \newlabel{eq:err}{{2.2}{4}}
 \newlabel{eq:err}{{2.3}{4}}
 \citation{bib:nn}
-\citation{bib:bp}
+\citation{bib:mlp}
 \citation{bib:rnn}
 \citation{bib:rnn}
 \newlabel{eq:err}{{2.5}{5}}
@@ -69,74 +69,32 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces Ein Bild einer B\IeC {\"u}roszene in 2 verschiedenen Weisen zerschnitten. F\IeC {\"u}r die linke Version ben\IeC {\"o}tigt man mehr Anstrengung um die Szene zu verstehen. Es veranschaulicht, wie eine Zerteilung nach Bedeutung die Wahrnehmung unterst\IeC {\"u}tzt. \cite  {bib:est}}}{11}}
 \newlabel{img:est}{{2.8}{11}}
 \citation{bib:jannlab}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Implementation}{12}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Implementierung}{12}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
 \@writefile{toc}{\contentsline {section}{\numberline {3.1}Das Bouncing Ball Szenario}{12}}
 \citation{bib:adam}
 \citation{bib:lstm2}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Unser LSTM, Parameter und Testf\IeC {\"a}lle}{13}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Parameter und Testf\IeC {\"a}lle}{13}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces 4 Versionen des Bouncing Ball Szenario erlernt durch LSTM Netze. Zu sehen sind der Netzinput (gr\IeC {\"u}n), der Netzoutput (rot) und das Trainingsziel (blau). Links sieht man 2 Beispiele des 1D Falls, zur besseren Veranschaulichung sind die Daten nach den Zeitschritten vertikal versetzt. Rechts sieht man 2 Beispiele des 2D Falls, die Abbildung zeigt jeweils den Verlauf des Balls bis kurz vor dem vollenden einer Runde, um \IeC {\"U}berlagerungen in der Abbildung zu vermeiden. Der Startpunkt ist durch den schwarzen Punkt gekennzeichnet. In den jeweils oberen F\IeC {\"a}llen wurde als Netzinput die Position des Balles und als Trainingsziel die Geschwindigkeit des Balles f\IeC {\"u}r den n\IeC {\"a}chsten Schritt. In den jeweils unteren F\IeC {\"a}llen wurde als Netzinput die Position des Balles und als Trainingsziel die vorauszuberechnende n\IeC {\"a}chste Position des Balles.}}{14}}
 \newlabel{img:1dvs2d}{{3.1}{14}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Chaostheorie im Bouncing Ball Szenario: Kleine Abweichungen im Bounce Verhalten haben gro\IeC {\ss }e Auswirkungen auf den weiteren Flug des Balls. Dies ist der Grund f\IeC {\"u}r Probleme beim Offline Training von F\IeC {\"a}llen, wo das Netz die Position des Balles selbst lenkt, da sehr gute Ann\IeC {\"a}herungen des korrekten Bounce Verhaltens trotzdem gro\IeC {\ss }e Fehler \IeC {\"u}ber Zeit erzeugen, werden also nicht als gute Ann\IeC {\"a}herungen erkannt.}}{19}}
 \newlabel{img:chaos}{{3.2}{19}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Das Training des Bouncing Verhaltens}{19}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces 1D Fall trainiert mit einem 1-1-1 Netz, also nur einem Neuron im Hiddenlayer. Trainiert ohne Feedback, zur \IeC {\"U}berpr\IeC {\"u}fung des Trainings dann hier im Bild dann verwendet. Man sieht, dass das Netz das Bounce Verhalten garnicht erlernt hat, sondern nur die kontinuierliche Bewegung. Au\IeC {\ss }erdem ist hier der Nutzen von Feedback als Testmethode des Trainings gut veranschaulicht.}}{20}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces TODO 1D Fall trainiert mit einem 1-1-1 Netz, also nur einem Neuron im Hiddenlayer. Trainiert ohne Feedback, zur \IeC {\"U}berpr\IeC {\"u}fung des Trainings dann hier im Bild dann verwendet. Man sieht, dass das Netz das Bounce Verhalten garnicht erlernt hat, sondern nur die kontinuierliche Bewegung. Au\IeC {\ss }erdem ist hier der Nutzen von Feedback als Testmethode des Trainings gut veranschaulicht.}}{20}}
 \newlabel{img:1d1}{{3.3}{20}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces 1D Fall genau gleich trainiert wie in Abbildung \ref  {img:1d1}, nur mit mehr Epochen. Das Netz hat seine Methode komplett gewechselt. eine periodische L\IeC {\"o}sung gefunden, anhand der aktivierung sieht man mit Events nix am Hut. Forgetgate und Outputgate passiert nix, infrastruktur der lstm zelle wird nicht genutzt. lediglich im cellstate werden die werte aufaddiert und bei \IeC {\"u}berschreiten eines thresholdes wird der sprung gemacht. sieht nach event aus ist aber nur eine periodische verkettung.}}{20}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces TODO 1D Fall genau gleich trainiert wie in Abbildung \ref  {img:1d1}, nur mit mehr Epochen. Das Netz hat seine Methode komplett gewechselt. eine periodische L\IeC {\"o}sung gefunden, anhand der aktivierung sieht man mit Events nix am Hut. Forgetgate und Outputgate passiert nix, infrastruktur der lstm zelle wird nicht genutzt. lediglich im cellstate werden die werte aufaddiert und bei \IeC {\"u}berschreiten eines thresholdes wird der sprung gemacht. sieht nach event aus ist aber nur eine periodische verkettung.}}{20}}
 \newlabel{img:1d2}{{3.4}{20}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Bild von Zittern ohne Feedback und schlechte Version von mit feedback die sehr kurvig und smooth ist. Auch wenn das Ergebnis weit vom Trainingsziel entfernt ist, sieht man hier die gl\IeC {\"a}ttende Wirkung der Feedback Methode }}{21}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces 2D Fall mit zuf\IeC {\"a}llig gew\IeC {\"a}hlter Startposition und Geschwindigkeit. Auch wenn das Ergebnis sehr nah am Trainingsziel ist, sieht man hier sehr deutlich das beschriebene Zittern, das sich durch anwenden der Feedback-Methode vermeiden l\IeC {\"a}sst.}}{21}}
 \newlabel{img:fb}{{3.5}{21}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Untersuchung}{22}}
-\@writefile{lof}{\addvspace {10\p@ }}
-\@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{ch:untersuchung}{{4}{22}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Verschiedene LSTM}{22}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Ergebnisse}{24}}
-\@writefile{lof}{\addvspace {10\p@ }}
-\@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{ch:results}{{5}{24}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Zusammenfassung und Ausblick}{25}}
-\@writefile{lof}{\addvspace {10\p@ }}
-\@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{ch:ende}{{6}{25}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.1}Zusammenfassung}{25}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.2}Ausblick}{25}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {7}Glossar}{26}}
-\@writefile{lof}{\addvspace {10\p@ }}
-\@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{ch:glossar}{{7}{26}}
-\bibcite{bib:neuron}{1}
-\bibcite{bib:aneuron}{2}
-\bibcite{bib:mlp}{3}
-\bibcite{bib:number}{4}
-\bibcite{bib:nn}{5}
-\bibcite{bib:bp}{6}
-\bibcite{bib:rnn}{7}
-\bibcite{bib:vgp}{8}
-\bibcite{bib:lstm}{9}
-\bibcite{bib:allo}{10}
-\bibcite{bib:apple}{11}
-\bibcite{bib:amazon}{12}
-\bibcite{bib:lstm2}{13}
-\bibcite{bib:est}{14}
-\bibcite{bib:est1}{15}
-\bibcite{bib:jannlab}{16}
-\bibcite{bib:adam}{17}
-\bibcite{bib:}{18}
-\bibcite{bib:}{19}
-\bibcite{bib:}{20}
-\bibcite{bib:}{21}
-\bibcite{bib:}{22}
-\bibcite{bib:}{23}
-\bibcite{bib:}{24}
-\bibcite{bib:}{25}
-\bibcite{bib:}{26}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces 2 F\IeC {\"a}lle trainiert mit je einem 2-16-2 Netz mit Feedback. Links als Trainingsziel die Geschwindigkeit, Rechts als Trainingsziel die n\IeC {\"a}chste Position. Feedback setzt nach der halben Simulationsl\IeC {\"a}nge ein, hier mit schwarzem Punkt markiert. Auch wenn das Ergebnis offensichtlich weit vom Trainingsziel entfernt ist, sieht man die gl\IeC {\"a}ttende Wirkung der Feedback Methode.}}{21}}
+\newlabel{img:fb2}{{3.6}{21}}
 \bibstyle{abbrv}
+\bibdata{literature}
+\bibcite{bib:number}{1}
+\bibcite{bib:mlp}{2}
+\bibcite{bib:aneuron}{3}
+\bibcite{bib:jannlab}{4}
+\bibcite{bib:neuron}{5}
 \global\@namedef{scr@dte@chapter@lastmaxnumwidth}{12.14694pt}
 \global\@namedef{scr@dte@section@lastmaxnumwidth}{19.70898pt}

@@ -17,8 +17,8 @@ Als neuronales Netz bezeichnet man eine verwobene Struktur zwischen vielen einze
 \end{figure}
 \begin{figure}
 	\centering
-	\includegraphics[width=0.7\textwidth, height=130px]{pics/MLP.png}	
-	\caption{Ein Multilayer Perceptron mit 2 Inputneuronen(grün), einem Hidden Layer mit 5 Neuronen(blau) und einem einzelnen Outputneuron(gelb).   \cite{bib:mlp}}
+	\includegraphics[width=0.7\textwidth, height=130px]{pics/mlp.jpg}	
+	\caption{Ein Multilayer Perceptron mit m Inputneuronen(gelb), zwei Hidden Layern(blau) und zwei Outputneuronen(grün).   \cite{bib:mlp}}
 	\label{img:mlp}
 \end{figure}
 Es gibt viele verschiedene Arten von neuronalen Netzen, die einfachste von Ihnen ist das Multilayer Perceptron (MLP). Die Zellen werden zu mehreren Ebenen(Layer) zusammengefügt. Erst das Inputlayer, in das die Daten hineingegeben werden, dann die versteckten Layer, versteckt weil hier wie in einer Blackbox die Berechnungen passieren und dann an das Outputlayer weiterleitet, aus welchem das Ergebnis des Netzes kommt.Es gibt eine geordnete Datenflussrichtung, eine Zelle erhält ihren Input von jeder Zelle der vorigenen Ebene und gibt ihren Output entsprechend an jede Zelle der folgenden Ebene weiter, Feedforward genannt. Ein solches Netz sieht man in Abbildung \ref{img:mlp}.  
@@ -45,7 +45,7 @@ Bei der Anpassung der Gewichte der versteckten Zellen hat man aber das Problem, 
 \begin{description}	\item[Feedforward]\hfill \\
 	Das Inputlayer wird mit der Eingabe des jeweiligen Testsatzes befüllt und die Aktivierungen vorwärts Layer für Layer, Zelle für Zelle berechnet.  
 	\item[Backward-Pass]\hfill \\ 
-	Das Ergebnis am Outputlayer wird mit der gewünschten Lösung des Testsatzes verglichen und der Fehler berechnet. Diese werden entsprechend gewichtet die unteren Layer rückwärts Zelle für Zelle rückpropagiert. Oft werden hier statt dem tatsächlichen Fehler direkt der Gradient bzw. ein Zwischenwert für dessen Berechnung propagiert\ref{eq:bp}.
+	Das Ergebnis am Outputlayer wird mit der gewünschten Lösung des Testsatzes verglichen und der Fehler berechnet. Diese werden entsprechend gewichtet die unteren Layer rückwärts Zelle für Zelle rückpropagiert. Oft werden hier statt dem tatsächlichen Fehler direkt der Gradient bzw. ein Zwischenwert für dessen Berechnung propagiert.
 	\item[Anpassen der Gewichte]\hfill \\ Dies ist der wichtige Schritt, hier werden nun Zelle für Zelle die Gewichte entsprechend des Gradienten angepasst. Mit den neuen Gewichten ist in der Regel der Output des Netzes genauer, der Fehler also geringer und der Algorithmus lässt die Fehlerfunktion im Idealfall gegen 0 konvergieren.\cite{bib:nn}
 \end{description}
 Die Gewichte werden anhand eines absteigenden Gradienten der Fehlerfunktion, abgeleitet nach den Gewichten \(w_{ij}\), aktuallisiert.  Hierzu werden die \(\delta\), die aufsummierten Fehler für jede Zelle wie folgt berechnet: 
@@ -55,11 +55,10 @@ Die Gewichte werden anhand eines absteigenden Gradienten der Fehlerfunktion, abg
 \label{eq:err}
 \end{gather}
 
-Wobei erst nach der oberen Gleichung für die Outputlayer die \(\delta_{k}\) gebildet und in die jeweils unteren Layer nach der unteren Gleichung beim bilden der \(\delta_{h}\) gewichtet aufsummiert werden (Backpropagation). \textit{K} sind hier die Neuronen aus dem jeweils oberen Layer. Die Formel für das Gewichtsupdate mit einer Lernrate \(\eta\) lautet dann:
+Wobei erst nach der oberen Gleichung für die Outputlayer die \(\delta_{k}\) gebildet und in die jeweils unteren Layer nach der unteren Gleichung beim bilden der \(\delta_{h}\) gewichtet aufsummiert werden (Backpropagation). \textit{K} sind hier die Neuronen aus dem jeweils oberen Layer. Die Formel für das Gewichtsupdate mit einer Lernrate \(\eta\) lautet dann \cite{bib:mlp}:
 \begin{gather}	
 	\Delta w_{ij} =_{def}  -\eta \frac{\partial E}{\partial w_{ij}} = -\eta x_{i}\delta_{j}  
 \end{gather} 
-Formel zur Berechnung der Gewichtupdates aus dem Gradienten der Fehlerfunktion \cite{bib:bp}\\
 Es gibt nun noch verschiedene Techniken um das Ergebnis weiter zu verbessern und das lernen noch schneller und stabiler zu machen, an dieser Stelle wollen wir unser Augenmerk aber in eine andere Richtung lenken. 
 \section{Rekurrente Neuronale Netze}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.17)  12 JUN 2017 00:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.17)  13 JUN 2017 19:26
 entering extended mode
 **./knthesis.tex
 (knthesis.tex
@@ -686,30 +686,6 @@ LaTeX Warning: Label `eq:err' multiply defined.
 
 LaTeX Warning: Label `eq:err' multiply defined.
 
-
-LaTeX Warning: Label `bib:' multiply defined.
-
-
-LaTeX Warning: Label `bib:' multiply defined.
-
-
-LaTeX Warning: Label `bib:' multiply defined.
-
-
-LaTeX Warning: Label `bib:' multiply defined.
-
-
-LaTeX Warning: Label `bib:' multiply defined.
-
-
-LaTeX Warning: Label `bib:' multiply defined.
-
-
-LaTeX Warning: Label `bib:' multiply defined.
-
-
-LaTeX Warning: Label `bib:' multiply defined.
-
 )
 \openout1 = `knthesis.aux'.
 
@@ -825,6 +801,9 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              a package that still implements the
 (scrreprt)              deprecated \float@addtolist interface .
 
+
+LaTeX Warning: Citation `bib:est' on page 1 undefined on input line 4.
+
 ) (chapters/02-Grundlagen.tex [1
 
 
@@ -837,60 +816,84 @@ File: pics/neuron.jpg Graphic file (type jpg)
 Package pdftex.def Info: pics/neuron.jpg used on input line 8.
 (pdftex.def)             Requested size: 299.2113pt x 130.49028pt.
 
-<pics/aneuron.png, id=16, 252.945pt x 120.45pt>
+<pics/aneuron.png, id=16, 252.945pt x 163.812pt>
 File: pics/aneuron.png Graphic file (type png)
  <use pics/aneuron.png>
 Package pdftex.def Info: pics/aneuron.png used on input line 14.
-(pdftex.def)             Requested size: 299.20584pt x 130.4994pt.
+(pdftex.def)             Requested size: 299.20584pt x 130.49736pt.
 
-<pics/MLP.png, id=18, 1027.84pt x 642.4pt>
-File: pics/MLP.png Graphic file (type png)
- <use pics/MLP.png>
-Package pdftex.def Info: pics/MLP.png used on input line 20.
-(pdftex.def)             Requested size: 299.19518pt x 130.48718pt.
+<pics/mlp.jpg, id=18, 890.5772pt x 463.7325pt>
+File: pics/mlp.jpg Graphic file (type jpg)
+ <use pics/mlp.jpg>
+Package pdftex.def Info: pics/mlp.jpg used on input line 20.
+(pdftex.def)             Requested size: 299.20471pt x 130.48811pt.
  [2
 
  <./pics/neuron.jpg>]
 Overfull \vbox (4.39998pt too high) has occurred while \output is active []
 
 
-[3 <./pics/aneuron.png> <./pics/MLP.png>]
+[3 <./pics/aneuron.png> <./pics/mlp.jpg>]
 LaTeX Font Info:    Try loading font information for T1+cmss on input line 45.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmss.fd"
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-
-LaTeX Warning: Reference `eq:bp' on page 4 undefined on input line 48.
-
-
 Overfull \vbox (4.39998pt too high) has occurred while \output is active []
 
 
-[4] <pics/rnn.jpg, id=40, 797.98125pt x 320.19624pt>
+[4]
+
+LaTeX Warning: Citation `bib:nn' on page 5 undefined on input line 49.
+
+<pics/rnn.jpg, id=39, 797.98125pt x 320.19624pt>
 File: pics/rnn.jpg Graphic file (type jpg)
  <use pics/rnn.jpg>
-Package pdftex.def Info: pics/rnn.jpg used on input line 69.
+Package pdftex.def Info: pics/rnn.jpg used on input line 68.
 (pdftex.def)             Requested size: 299.19353pt x 130.4898pt.
 
+
+LaTeX Warning: Citation `bib:rnn' on page 5 undefined on input line 69.
+
+
+LaTeX Warning: Citation `bib:rnn' on page 5 undefined on input line 69.
+
+
 Overfull \vbox (4.39998pt too high) has occurred while \output is active []
 
 
-[5] <pics/vgp.jpg, id=46, 618.31pt x 334.24875pt>
+[5] <pics/vgp.jpg, id=45, 618.31pt x 334.24875pt>
 File: pics/vgp.jpg Graphic file (type jpg)
  <use pics/vgp.jpg>
-Package pdftex.def Info: pics/vgp.jpg used on input line 88.
+Package pdftex.def Info: pics/vgp.jpg used on input line 87.
 (pdftex.def)             Requested size: 299.21013pt x 130.48909pt.
+
+
+LaTeX Warning: Citation `bib:vgp' on page 6 undefined on input line 88.
+
+
+LaTeX Warning: Citation `bib:vgp' on page 6 undefined on input line 88.
+
 
 Overfull \vbox (4.39998pt too high) has occurred while \output is active []
 
 
-[6 <./pics/rnn.jpg>] <pics/lstm.png, id=51, 331.2375pt x 502.87875pt>
+[6 <./pics/rnn.jpg>] <pics/lstm.png, id=50, 331.2375pt x 502.87875pt>
 File: pics/lstm.png Graphic file (type png)
 
 <use pics/lstm.png>
-Package pdftex.def Info: pics/lstm.png used on input line 98.
+Package pdftex.def Info: pics/lstm.png used on input line 97.
 (pdftex.def)             Requested size: 213.71477pt x 301.12338pt.
+
+
+LaTeX Warning: Citation `bib:lstm' on page 7 undefined on input line 98.
+
+
+LaTeX Warning: Citation `bib:lstm' on page 7 undefined on input line 98.
+
+
+LaTeX Warning: Citation `bib:lstm2' on page 7 undefined on input line 101.
+
 
 Overfull \vbox (4.39998pt too high) has occurred while \output is active []
 
@@ -899,22 +902,57 @@ Overfull \vbox (4.39998pt too high) has occurred while \output is active []
 Overfull \vbox (4.39998pt too high) has occurred while \output is active []
 
 
-[8 <./pics/lstm.png>] <pics/lstm2.png, id=59, 474.27188pt x 249.18094pt>
-File: pics/lstm2.png Graphic file (type png)
+[8 <./pics/lstm.png>]
 
-<use pics/lstm2.png>
-Package pdftex.def Info: pics/lstm2.png used on input line 107.
+LaTeX Warning: Citation `bib:lstm' on page 9 undefined on input line 103.
+
+<pics/lstm2.png, id=58, 474.27188pt x 249.18094pt>
+File: pics/lstm2.png Graphic file (type png)
+ <use pics/lstm2.png>
+Package pdftex.def Info: pics/lstm2.png used on input line 106.
 (pdftex.def)             Requested size: 299.2126pt x 130.49115pt.
+
+
+LaTeX Warning: Citation `bib:lstm' on page 9 undefined on input line 107.
+
+
+LaTeX Warning: Citation `bib:lstm' on page 9 undefined on input line 107.
+
+
+LaTeX Warning: Citation `bib:apple' on page 9 undefined on input line 111.
+
+
+LaTeX Warning: Citation `bib:amazon' on page 9 undefined on input line 111.
+
+
+LaTeX Warning: Citation `bib:allo' on page 9 undefined on input line 111.
+
 
 Overfull \vbox (4.39998pt too high) has occurred while \output is active []
 
 
-[9 <./pics/lstm2.png>] <pics/est.jpg, id=64, 953.0004pt x 380.622pt>
-File: pics/est.jpg Graphic file (type jpg)
+[9 <./pics/lstm2.png>]
 
-<use pics/est.jpg>
-Package pdftex.def Info: pics/est.jpg used on input line 125.
+LaTeX Warning: Citation `bib:est' on page 10 undefined on input line 116.
+
+
+LaTeX Warning: Citation `bib:est1' on page 10 undefined on input line 116.
+
+
+LaTeX Warning: Citation `bib:est1' on page 10 undefined on input line 116.
+
+<pics/est.jpg, id=63, 953.0004pt x 380.622pt>
+File: pics/est.jpg Graphic file (type jpg)
+ <use pics/est.jpg>
+Package pdftex.def Info: pics/est.jpg used on input line 124.
 (pdftex.def)             Requested size: 384.68338pt x 130.49pt.
+
+
+LaTeX Warning: Citation `bib:est' on page 10 undefined on input line 125.
+
+
+LaTeX Warning: Citation `bib:est' on page 10 undefined on input line 125.
+
 ) (chapters/03-Implementation.tex
 Overfull \vbox (4.39998pt too high) has occurred while \output is active []
 
@@ -925,7 +963,7 @@ Overfull \vbox (4.39998pt too high) has occurred while \output is active []
 
 [11 <./pics/est.jpg>]
 chapter 3.
-<pics/1dvs2d.jpg, id=72, 1058.45438pt x 925.95938pt>
+<pics/1dvs2d.jpg, id=71, 1058.45438pt x 925.95938pt>
 File: pics/1dvs2d.jpg Graphic file (type jpg)
  <use pics/1dvs2d.jpg>
 Package pdftex.def Info: pics/1dvs2d.jpg used on input line 14.
@@ -934,6 +972,13 @@ Package pdftex.def Info: pics/1dvs2d.jpg used on input line 14.
 [12
 
 ]
+
+LaTeX Warning: Citation `bib:adam' on page 13 undefined on input line 24.
+
+
+LaTeX Warning: Citation `bib:lstm2' on page 13 undefined on input line 28.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 32--33
 
  []
@@ -990,13 +1035,13 @@ Overfull \vbox (4.39998pt too high) has occurred while \output is active []
 Overfull \vbox (4.39998pt too high) has occurred while \output is active []
 
 
-[18] <pics/chaos.png, id=95, 363.759pt x 346.29375pt>
+[18] <pics/chaos.png, id=94, 363.759pt x 346.29375pt>
 File: pics/chaos.png Graphic file (type png)
  <use pics/chaos.png>
 Package pdftex.def Info: pics/chaos.png used on input line 75.
 (pdftex.def)             Requested size: 213.71677pt x 160.6022pt.
 
-<pics/dummy.png, id=96, 363.759pt x 346.29375pt>
+<pics/dummy.png, id=95, 363.759pt x 346.29375pt>
 File: pics/dummy.png Graphic file (type png)
  <use pics/dummy.png>
 Package pdftex.def Info: pics/dummy.png used on input line 81.
@@ -1005,12 +1050,20 @@ File: pics/dummy.png Graphic file (type png)
 
 <use pics/dummy.png>
 Package pdftex.def Info: pics/dummy.png used on input line 87.
-(pdftex.def)             Requested size: 213.71677pt x 160.6022pt.
-File: pics/dummy.png Graphic file (type png)
- <use pics/dummy.png>
-Package pdftex.def Info: pics/dummy.png used on input line 93.
-(pdftex.def)             Requested size: 213.71677pt x 160.6022pt.
-) (chapters/04-Untersuchung.tex
+(pdftex.def)             Requested size: 256.46678pt x 160.6022pt.
+ <pics/fb.png, id=96, 356.532pt x 339.669pt>
+File: pics/fb.png Graphic file (type png)
+
+<use pics/fb.png>
+Package pdftex.def Info: pics/fb.png used on input line 93.
+(pdftex.def)             Requested size: 256.47978pt x 160.60329pt.
+ <pics/fb2.png, id=97, 726.3135pt x 366.168pt>
+File: pics/fb2.png Graphic file (type png)
+
+<use pics/fb2.png>
+Package pdftex.def Info: pics/fb2.png used on input line 99.
+(pdftex.def)             Requested size: 384.70052pt x 160.60039pt.
+)
 Overfull \vbox (4.39998pt too high) has occurred while \output is active []
 
 
@@ -1022,110 +1075,16 @@ Overfull \vbox (4.39998pt too high) has occurred while \output is active []
 Overfull \vbox (4.39998pt too high) has occurred while \output is active []
 
 
-[21]
-chapter 4.
-[22
+[21 <./pics/fb.png> <./pics/fb2.png>] (knthesis.bbl
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 4.
 
-]) (chapters/05-Ergebnisse.tex
-Overfull \vbox (4.39998pt too high) has occurred while \output is active []
-
-
-[23]
-chapter 5.
-) (chapters/06-Ende.tex [24
-
-]
-chapter 6.
-) (chapters/08-Glossar.tex [25
-
-]
-chapter 7.
-[26
-
-])
-Overfull \vbox (4.39998pt too high) has occurred while \output is active []
-
-
-[27]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 62.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
-[]$\T1/cmtt/m/n/12 online . science . psu . edu / bisc004 _ activewd001 / node 
-/ 1907$ \T1/cmr/m/n/12 (ab-ge-ru-fen
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--64
-[]$\T1/cmtt/m/n/12 de . wikipedia . org / wiki / K % C3 % BCnstliches _ Neuron$
- \T1/cmr/m/n/12 (ab-ge-ru-fen am
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
-[]$\T1/cmtt/m/n/12 de . wikipedia . org / wiki / Neuronales _ Netz # /media / F
-ile : Neural _
- []
-
-
-Underfull \hbox (badness 5316) in paragraph at lines 65--66
-[]$\T1/cmtt/m/n/12 en . wikipedia . org / wiki / List _ of _ animals _ by _ num
-ber _ of _ neurons$ \T1/cmr/m/n/12 (ab-
- []
-
-
-Overfull \hbox (144.68935pt too wide) in paragraph at lines 68--69
-[]$\T1/cmtt/m/n/12 www . wildml . com / 2015 / 09 / recurrent-[]neural-[]networ
-ks-[]tutorial-[]part-[]1-[]introduction-[]to-[]rnns/$
- []
-
-
-Overfull \hbox (327.22063pt too wide) in paragraph at lines 70--71
-[]$\T1/cmtt/m/n/12 www . quora . com / How-[]does-[]LSTM-[]help-[]prevent-[]the
--[]vanishing-[]and-[]exploding-[]gradient-[]problem-[]in-[]a-[]recurrent-[]neur
-al-[]network$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 72--73
-[]$\T1/cmtt/m/n/12 www . theinformation . com / apples-[]machines-[]can-[]learn
--[]too$ \T1/cmr/m/n/12 (ab-ge-ru-fen
- []
-
-
-Overfull \hbox (70.10744pt too wide) in paragraph at lines 73--74
-[]$\T1/cmtt/m/n/12 www . allthingsdistributed . com / 2016 / 11 / amazon-[]ai-[
-]and-[]alexa-[]for-[]all-[]aws-[]apps .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
-[]$\T1/cmtt/m/n/12 www . ncbi . nlm . nih . gov / pmc / articles / PMC3314399/$
- \T1/cmr/m/n/12 (ab-ge-ru-fen am
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
-[]$\T1/cmtt/m/n/12 www . ncbi . nlm . nih . gov / pmc / articles / PMC2852534/$
- \T1/cmr/m/n/12 (ab-ge-ru-fen am
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
-[]$\T1/cmtt/m/n/12 www . sebastianruder . com / optimizing-[]gradient-[]descent
-/$ \T1/cmr/m/n/12 (ab-ge-ru-fen
- []
-
-[28
+)) [22
 
 
 
-]
-Overfull \vbox (4.39998pt too high) has occurred while \output is active []
-
-
-[29] (knthesis.aux)
+] (knthesis.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1134,10 +1093,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6774 strings out of 493333
- 101331 string characters out of 3139188
- 264399 words of memory out of 3000000
- 10104 multiletter control sequences out of 15000+200000
+ 6760 strings out of 493333
+ 100928 string characters out of 3139188
+ 264326 words of memory out of 3000000
+ 10097 multiletter control sequences out of 15000+200000
  15828 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  48i,9n,66p,8821b,338s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1159,9 +1118,9 @@ amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on knthesis.pdf (31 pages, 895488 bytes).
+Output written on knthesis.pdf (24 pages, 1061441 bytes).
 PDF statistics:
- 556 PDF objects out of 1000 (max. 8388607)
+ 469 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
