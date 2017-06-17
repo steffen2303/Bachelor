@@ -1,5 +1,0 @@
-\select@language {ngerman}
-\contentsline {chapter}{\numberline {1}Gates und Eventgrenzen}{1}
-\contentsline {section}{\numberline {1.1}Gate-Aktivierungen}{1}
-\contentsline {section}{\numberline {1.2}Automatisierte Klassifizierung}{1}
-\contentsline {section}{\numberline {1.3}Analyse mit BPTT}{1}
