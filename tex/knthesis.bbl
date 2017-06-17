@@ -1,30 +1,9 @@
 \begin{thebibliography}{1}
 
-\bibitem{bib:number}
-\url{en.wikipedia.org/wiki/List_of_animals_by_number_of_neurons}.
-\newblock abgerufen am 13.06.2017.
-
-\bibitem{bib:mlp}
-S.~U. Fernando Sancho~Caparrini.
-\newblock Artificial neural networks.
-\newblock \url{cs.us.es/~fsancho/?e=135}, 2017.
-\newblock abgerufen am 13.06.2017.
-
-\bibitem{bib:aneuron}
-S.~Haykin.
-\newblock {\em Neural Networks: A Comprehensive Foundation}.
-\newblock 1994.
-
-\bibitem{bib:jannlab}
-S.~Otte, D.~Krechel, and M.~Liwicki.
-\newblock Jannlab neural network framework for java.
-\newblock In {\em Poster Proceedings Conference {MLDM} 2013}, pages 39--46, New
-  York, USA, 2013. ibai-publishing.
-
-\bibitem{bib:neuron}
-P.~S. University.
-\newblock Neurons.
-\newblock \url{online.science.psu.edu/bisc004_activewd001/node/1907}, 2017.
-\newblock abgerufen am 10.05.2017.
+\bibitem{bib:graves}
+A.~Graves and J.~Schmidhuber.
+\newblock Framewise phoneme classification with bidirectional lstm and other
+  neural network architectures.
+\newblock In {\em Neural Networks}, pages 602--610, 2005.
 
 \end{thebibliography}

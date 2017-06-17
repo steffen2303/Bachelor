@@ -1,19 +1,32 @@
-\chapter{Beziehung zwischen Gate}
+\chapter{Gates und Eventgrenzen}
 \label{ch:untersuchung}
-Nun haben wir also Neuronale Netz mit LSTM Speicherzellen auf verschiedene Fälle des Bouncing Ball Szenarios trainiert. Wenn man dabei die internen Aktivierungen der Gates über die Zeit betrachtet und vergleicht mit dem Verlauf der Ereignisse der trainierten Aktion, findet man Zusammenhänge. In diesem Kapitel werden wie erst Beispiele für solche Zusammenhänge betrachten, dann schauen wie man diese automatisiert finden kann. Zum Schluss schauen wir noch, wie wir mit Hilfe von Backpropagation through time Vorhersagen über Events anhand der Gate-Aktivierungen treffen kann und wie diese helfen, die Eventbeziehungen zu klassifizieren.
-\section{Gates und Events}
+Nun haben wir also Neuronale Netz mit LSTM Speicherzellen auf verschiedene Fälle des Bouncing Ball Szenarios trainiert. Wenn man dabei die internen Aktivierungen der Gates über die Zeit betrachtet und vergleicht mit dem Verlauf der Ereignisse der trainierten Aktion, findet man Zusammenhänge. In diesem Kapitel werden wie erst Beispiele für solche Zusammenhänge betrachten, dann schauen wie man diese automatisiert finden kann. Zum Schluss schauen wir noch, wie wir mit Hilfe von Backpropagation through time Vorhersagen über Events anhand der Gate-Aktivierungen treffen können und wir dieselbe Technik nutzen können um die Eventbeziehungen zu klassifizieren.
+\section{Gate-Aktivierungen}
+Die Möglichkeiten wie sich eine LSTM über die Zeit verhalten kann sind zahlreich, noch zahlreicher die Möglichkeiten wie mehrere von ihnen miteinander interagieren. 
 
 
+\begin{figure}
+	\centering
+	\includegraphics[width=0.9\textwidth, height=400px]{pics/act1.png}	
+	\caption{Der 1D Fall mit Ballposition als Netzinput und nächste Geschwindigkeit als Trainingsziel, gelernt von einem 1-1-1 Netz.  }
+	\label{img:act1}
+\end{figure}
 
 
+\cite{bib:graves}
 
-\section{Automatisierte Erkennung durch MLP}
+\section{Automatisierte Klassifizierung}
 
 
 
 
 \section{Analyse mit BPTT}
 
+periodisch: sieht man immer, das nicht das problem, sogar klar. overfitting
+
+Verhalten an der Eventgrenze:
+
+runde annäherung nicht erwünscht, aber wird es immer sein nur eben immer unrunder. im besten fall, dauert die eventgrenze immernoch über 4 zeitschritte an(1D-Fall), was durch Diskretisierung abgehackt aussieht, aber doch eine kurve ist bei kontinuierlich
 
 
 

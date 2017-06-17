@@ -1,21 +1,3 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: knthesis.aux
 The style file: abbrv.bst
 Database file #1: literature.bib
-Repeated entry---line 41 of file literature.bib
- : @misc{bib:number
- :                 }\url{s} (abgerufen am 20.05.2017)
-I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "bib:est"
-Warning--I didn't find a database entry for "bib:nn"
-Warning--I didn't find a database entry for "bib:rnn"
-Warning--I didn't find a database entry for "bib:vgp"
-Warning--I didn't find a database entry for "bib:lstm"
-Warning--I didn't find a database entry for "bib:lstm2"
-Warning--I didn't find a database entry for "bib:apple"
-Warning--I didn't find a database entry for "bib:amazon"
-Warning--I didn't find a database entry for "bib:allo"
-Warning--I didn't find a database entry for "bib:est1"
-Warning--I didn't find a database entry for "bib:adam"
-Warning--to sort, need author or key in bib:number
-Warning--empty publisher in bib:aneuron
-(There was 1 error message)

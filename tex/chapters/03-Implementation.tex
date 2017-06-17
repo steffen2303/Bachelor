@@ -40,8 +40,8 @@ Außerdem werden verschiedene Testfälle mit verschiedenen Intentionen betrachte
 	\item[Verschiedene Trainingsziele:] \hfill \\
 	\begin{itemize}
 	
-	\item Nächste Position: Der Standard Output.
-	\item Geschwindigkeit: Da die Geschwindigkeit bis auf Vorzeichen konstant ist,  kann sich das Netz hier darauf konzentrieren zu klassifizieren, in welchem Ereignis, also Bewegungsabschnitt es sich befindet, also ob sich der Ball momentan z.B. nach links oben bewegt.  
+	\item Nächste Position: Das Standard Trainingsziel.
+	\item Geschwindigkeit: Da die Geschwindigkeit bis auf Vorzeichen konstant ist, kann sich das Netz hier darauf konzentrieren zu klassifizieren, in welchem Ereignis, also Bewegungsabschnitt es sich befindet, also ob sich der Ball momentan z.B. nach links oben bewegt.  
 	\item Nächstes Event: Es wurde auch getestet wie sich das Netz verhält wenn es selbst vorhersagen soll, welches Event als nächstes ansteht. War erfolgreich auch bei zufälligen Startposition und Geschwindigkeiten, was aber nicht weiter Überraschend ist, das sich das LSTM Netz auf ein lineares Problem, welche Grenze als nächstes getroffen wird, trainieren lässt. Auch aus den Aktivierungen im Netz konnte nichts interessantes gefolgert werden, weswegen das nächste Event als Trainingsziel nicht mehr aufgegriffen wird. 
 	
 \end{itemize}
@@ -78,15 +78,9 @@ Außerdem werden verschiedene Testfälle mit verschiedenen Intentionen betrachte
 \end{figure}
 \begin{figure}
 	\centering
-	\includegraphics[width=0.5\textwidth, height=160px]{pics/dummy.png}	
-	\caption{TODO 1D Fall trainiert mit einem 1-1-1 Netz, also nur einem Neuron im Hiddenlayer. Trainiert ohne Feedback, zur Überprüfung des Trainings dann hier im Bild dann verwendet. Man sieht, dass das Netz das Bounce Verhalten garnicht erlernt hat, sondern nur die kontinuierliche Bewegung. Außerdem ist hier der Nutzen von Feedback als Testmethode des Trainings gut veranschaulicht.}
+	\includegraphics[width=0.5\textwidth, height=160px]{pics/1D1.png}	
+	\caption{1D Fall mit der Geschwindigkeit als Trainingsziel erlernt von einem 1-1-1 Netz. Trainiert ohne Feedback, zur Überprüfung des Trainings dann hier im Bild verwendet, setzt auf Höhe der horizontalen grauen Linie an. Man sieht, dass das Netz das Bounce Verhalten nicht erlernt hat und als Abschätzung der nächsten Geschwindigkeit die vergangene Geschwindigkeit verwendet. Der Output ist so zum Trainingsziel um einen Zeitschritt versetzt. Setzt dann aber das Feedback ein und das Netz steuert den Input selbst, läuft dieser mit konstanter Geschwindigkeit davon. Außerdem ist hier der Nutzen von Feedback als Testmethode des Trainings gut veranschaulicht.}
 	 \label{img:1d1}
-\end{figure}
-\begin{figure}
-	\centering
-	\includegraphics[width=0.6\textwidth, height=160px]{pics/dummy.png}	
-	\caption{TODO 1D Fall genau gleich trainiert wie in Abbildung \ref{img:1d1}, nur mit mehr Epochen. Das Netz hat seine Methode komplett gewechselt. eine periodische Lösung gefunden, anhand der aktivierung sieht man mit Events nix am Hut. Forgetgate und Outputgate passiert nix, infrastruktur der lstm zelle wird nicht genutzt. lediglich im cellstate werden die werte aufaddiert und bei überschreiten eines thresholdes wird der sprung gemacht. sieht nach event aus ist aber nur eine periodische verkettung.}
-	\label{img:1d2}
 \end{figure}
 \begin{figure}
 	\centering
