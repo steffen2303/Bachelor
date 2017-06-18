@@ -1,130 +1,17 @@
 \relax 
-\catcode`"\active
+\providecommand*\new@tpo@label[2]{}
+\catcode `"\active 
 \select@language{ngerman}
 \@writefile{toc}{\select@language{ngerman}}
 \@writefile{lof}{\select@language{ngerman}}
 \@writefile{lot}{\select@language{ngerman}}
-\citation{bib:number}
-\citation{bib:neuron}
-\citation{bib:neuron}
-\citation{bib:aneuron}
-\citation{bib:aneuron}
-\citation{bib:mlp}
-\citation{bib:mlp}
-\@writefile{toc}{\contentsline {chapter}{\numberline {1}Grundlagen}{1}}
+\citation{bib:est}
+\@writefile{toc}{\contentsline {chapter}{\numberline {1}Einleitung}{1}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{ch:grundlagen}{{1}{1}}
-\@writefile{toc}{\contentsline {section}{\numberline {1.1}Neuronale Netze}{1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.1}{\ignorespaces Schematische Darstellung eines biologischen Neuron \cite  {bib:neuron}}}{1}}
-\newlabel{img:neuron}{{1.1}{1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.2}{\ignorespaces Schematische Darstellung einer M\IeC {\"o}glichkeit, ein k\IeC {\"u}nstliches Neuron zu simulieren. Die Input Signale kommen von anderen Neuronen und werden gewichtet aufsummiert. Das Ergebnis der Aktivierungsfunktion wird als Output an andere Neuronen weitergeleitet. Mit dem biologischen Vorbild vergleichbar sind hier die Aufsummierung und Aktivierungsfunktion mit dem Zellk\IeC {\"o}rper, die Input Signale mit den Gewichten mit Synapsen und der Output mit dem Axon.\cite  {bib:aneuron}}}{2}}
-\newlabel{img:aneuron}{{1.2}{2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.3}{\ignorespaces Ein Multilayer Perceptron mit m Inputneuronen(gelb), zwei Hidden Layern(blau) und zwei Outputneuronen(gr\IeC {\"u}n). Die Datenfluss ist in eine Richtung, Feedforward genannt. \cite  {bib:mlp}}}{2}}
-\newlabel{img:mlp}{{1.3}{2}}
-\newlabel{eq:act}{{1.1}{3}}
-\newlabel{eq:err}{{1.2}{3}}
-\newlabel{eq:err}{{1.3}{3}}
-\citation{bib:aneuron}
-\citation{bib:sgd}
-\citation{bib:adam}
-\citation{bib:rnn}
-\citation{bib:rnn}
-\newlabel{eq:err}{{1.5}{4}}
-\citation{bib:bptt}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.4}{\ignorespaces Um Backpropagation f\IeC {\"u}r ein rekurrentes Netz zu benutzen, muss man es durch die Zeit auffallten. \cite  {bib:rnn}}}{5}}
-\newlabel{img:rnn}{{1.4}{5}}
-\@writefile{toc}{\contentsline {section}{\numberline {1.2}Rekurrente Neuronale Netze}{5}}
-\citation{bib:graves}
-\citation{bib:graves}
-\citation{bib:vgp}
-\citation{bib:egp}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.5}{\ignorespaces Das Problem vom verschwindendem Gradienten in einem rekurrenten Netz. Ein Fehler im Zeitschritt 1 erzeugt einen Gradienten, der aber auf die folgenden Zeitschritte immer weniger Einfluss hat.\cite  {bib:graves}}}{6}}
-\newlabel{img:vgp}{{1.5}{6}}
-\@writefile{toc}{\contentsline {section}{\numberline {1.3}Das Vanishing Gradient Problem}{6}}
-\citation{bib:lstmpic}
-\citation{bib:lstmpic}
-\citation{bib:lstm3}
-\citation{bib:lstm}
-\citation{bib:peep}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.6}{\ignorespaces Ein Aufbau einer LSTM-Speicherzelle. 4 Neuronen (blau), die die 3 multiplikativen Gates lenken (rot), die das Verhalten der Speicherzelle steuern. Im inneren wird der Inhalt auf sich selbst abgebildet und mit neuem Input per Addition erg\IeC {\"a}nzt (gr\IeC {\"u}n). \cite  {bib:lstmpic}}}{7}}
-\newlabel{img:lstm}{{1.6}{7}}
-\@writefile{toc}{\contentsline {section}{\numberline {1.4}LSTM}{7}}
-\citation{bib:lstm}
-\citation{bib:graves}
-\citation{bib:graves}
-\citation{bib:apple}
-\citation{bib:amazon}
-\citation{bib:allo}
-\citation{bib:est1}
-\citation{bib:est}
-\citation{bib:est}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.7}{\ignorespaces Der Inhalt der Zelle wird durch die verschiedenen Zeitschritte durch die Gates gelenkt. Kreis bedeutet ein offenes Gate, ein Querstrich stellt ein geschlossenes Gate dar. \cite  {bib:graves}}}{8}}
-\newlabel{img:lstm2}{{1.7}{8}}
-\citation{bib:est}
-\citation{bib:est}
-\@writefile{toc}{\contentsline {section}{\numberline {1.5}Event Segmentation Theory}{9}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.8}{\ignorespaces Ein Bild einer B\IeC {\"u}roszene in 2 verschiedenen Weisen zerschnitten. F\IeC {\"u}r die linke Version ben\IeC {\"o}tigt man mehr Anstrengung um die Szene zu verstehen. Es veranschaulicht, wie eine Zerteilung nach Bedeutung die Wahrnehmung unterst\IeC {\"u}tzt. \cite  {bib:est}}}{10}}
-\newlabel{img:est}{{1.8}{10}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {2}Implementierung}{11}}
-\@writefile{lof}{\addvspace {10\p@ }}
-\@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{loa}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {2.1}Das Bouncing Ball Szenario}{11}}
-\citation{bib:lstm2}
-\@writefile{toc}{\contentsline {section}{\numberline {2.2}Parameter und Testf\IeC {\"a}lle}{12}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces 4 Versionen des Bouncing Ball Szenario erlernt durch LSTM Netze. Zu sehen sind der Netzinput (gr\IeC {\"u}n), der Netzoutput (rot) und das Trainingsziel (blau). Links sieht man 2 Beispiele des 1D Falls, zur besseren Veranschaulichung sind die Daten nach den Zeitschritten vertikal versetzt. Rechts sieht man 2 Beispiele des 2D Falls, die Abbildung zeigt jeweils den Verlauf des Balls bis kurz vor dem vollenden einer Runde, um \IeC {\"U}berlagerungen in der Abbildung zu vermeiden. Der Startpunkt ist durch den schwarzen Punkt gekennzeichnet. In den jeweils oberen F\IeC {\"a}llen wurde als Netzinput die Position des Balles und als Trainingsziel die Geschwindigkeit des Balles f\IeC {\"u}r den n\IeC {\"a}chsten Schritt. In den jeweils unteren F\IeC {\"a}llen wurde als Netzinput die Position des Balles und als Trainingsziel die vorauszuberechnende n\IeC {\"a}chste Position des Balles.}}{13}}
-\newlabel{img:1dvs2d}{{2.1}{13}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Chaostheorie im Bouncing Ball Szenario: Kleine Abweichungen im Bounce Verhalten haben gro\IeC {\ss }e Auswirkungen auf den weiteren Flug des Balls. Dies ist der Grund f\IeC {\"u}r Probleme beim Offline Training von F\IeC {\"a}llen, wo das Netz die Position des Balles selbst lenkt, da sehr gute Ann\IeC {\"a}herungen des korrekten Bounce Verhaltens trotzdem gro\IeC {\ss }e Fehler \IeC {\"u}ber Zeit erzeugen, werden also nicht als gute Ann\IeC {\"a}herungen erkannt.}}{18}}
-\newlabel{img:chaos}{{2.2}{18}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces 1D Fall mit der Geschwindigkeit als Trainingsziel erlernt von einem 1-1-1 Netz. Trainiert ohne Feedback, zur \IeC {\"U}berpr\IeC {\"u}fung des Trainings dann hier im Bild verwendet, setzt auf H\IeC {\"o}he der horizontalen grauen Linie an. Man sieht, dass das Netz das Bounce Verhalten nicht erlernt hat und als Absch\IeC {\"a}tzung der n\IeC {\"a}chsten Geschwindigkeit die vergangene Geschwindigkeit verwendet. Der Output ist so zum Trainingsziel um einen Zeitschritt versetzt. Setzt dann aber das Feedback ein und das Netz steuert den Input selbst, l\IeC {\"a}uft dieser mit konstanter Geschwindigkeit davon. Au\IeC {\ss }erdem ist hier der Nutzen von Feedback als Testmethode des Trainings gut veranschaulicht.}}{19}}
-\newlabel{img:1d1}{{2.3}{19}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces 2D Fall mit zuf\IeC {\"a}llig gew\IeC {\"a}hlter Startposition und Geschwindigkeit. Auch wenn das Ergebnis sehr nah am Trainingsziel ist, sieht man hier sehr deutlich das beschriebene Zittern, das sich durch anwenden der Feedback-Methode vermeiden l\IeC {\"a}sst.}}{19}}
-\newlabel{img:fb}{{2.4}{19}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces 2 F\IeC {\"a}lle trainiert mit je einem 2-16-2 Netz mit Feedback. Links als Trainingsziel die Geschwindigkeit, Rechts als Trainingsziel die n\IeC {\"a}chste Position. Feedback setzt nach der halben Simulationsl\IeC {\"a}nge ein, hier mit schwarzem Punkt markiert. Auch wenn das Ergebnis offensichtlich weit vom Trainingsziel entfernt ist, sieht man die gl\IeC {\"a}ttende Wirkung der Feedback Methode.}}{20}}
-\newlabel{img:fb2}{{2.5}{20}}
-\citation{bib:graves}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Gates und Eventgrenzen}{21}}
-\@writefile{lof}{\addvspace {10\p@ }}
-\@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{ch:untersuchung}{{3}{21}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}Gate-Aktivierungen}{21}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Automatisierte Klassifizierung}{21}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Analyse mit BPTT}{21}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces TODO }}{22}}
-\newlabel{img:act1}{{3.1}{22}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces TODO }}{23}}
-\newlabel{img:act2}{{3.2}{23}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces TODO }}{24}}
-\newlabel{img:act3}{{3.3}{24}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces TODO }}{25}}
-\newlabel{img:act4}{{3.4}{25}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces TODO }}{25}}
-\newlabel{img:diagramm}{{3.5}{25}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Krasse Tabelle}}{26}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces TODO }}{26}}
-\newlabel{img:inputgate}{{3.6}{26}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces Krasse Tabelle}}{27}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces TODO }}{27}}
-\newlabel{img:forgetgate}{{3.7}{27}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces TODO }}{28}}
-\newlabel{img:outputgate}{{3.8}{28}}
+\newlabel{ch:introduction}{{1}{1}}
 \bibstyle{abbrv}
 \bibdata{literature}
-\bibcite{bib:number}{1}
-\bibcite{bib:neuron}{2}
-\bibcite{bib:mlp}{3}
-\bibcite{bib:lstm3}{4}
-\bibcite{bib:adam}{5}
-\bibcite{bib:peep}{6}
-\bibcite{bib:graves}{7}
-\bibcite{bib:aneuron}{8}
-\bibcite{bib:vgp}{9}
-\bibcite{bib:lstm}{10}
-\bibcite{bib:egp}{11}
-\bibcite{bib:sgd}{12}
-\bibcite{bib:bptt}{13}
-\bibcite{bib:est1}{14}
-\bibcite{bib:est}{15}
+\bibcite{bib:est}{1}
+\global\@namedef{scr@dte@chapter@lastmaxnumwidth}{12.14694pt}
