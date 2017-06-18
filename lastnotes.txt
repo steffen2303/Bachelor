@@ -1,0 +1,147 @@
+act 3 fall:
+
+nächstes event lässt sich anhand aller 3 gates vorhersagen
+äquivalent mit problem von diesem event
+
+Diagramm mit Predict Next Event
+
+
+es scheint korrespondenz zu geben, wie gut sich zellen herausfiltern lassen die für ein event wichtig sind und
+
+vertikale schlüsse können definitiv nicht geschlossen werden!
+
+zu sehr plausibel event 1 zelle 6 output gate. kleiner wert heißt nicht kleiner einfluss, vielleicht in manchen fällen sehr hohen einfluss nur nicht in jedem
+
+ganz anderer ansatz: nicht auf alle input gates aller zellen, sondern mehr auf eine einzelne zelle konzentrieren.
+
+
+trainiert für forgetgate auf event Rechter Bounce
+0.016857894922265863
+-0.04526646911602141
+0.20161209997183346
+0.16450719598916236
+-0.12247286061303626
+0.015011851485904639
+
+komisch gefunden
+
+
+
+ergebnisse:
+
+trainiert für forgetgate auf event Linker Bounce
+0.04601208759320439
+0.04891407420541193
+0.07152378930439711
+-0.2049948394014174
+0.10820868567806048
+-0.17868515210006813
+
+trainiert für inputgate auf event Linker Bounce
+0.04881179751245735
+-0.7664832750202509
+2.050654055325583
+0.11572833974767466
+-1.2201932563105322
+-0.881626253629516
+
+trainiert für outputgate auf event Linker Bounce
+-5.866560614431891
+10.255375904544165
+8.508726686365756
+-8.210305622980766
+-7.318203708149792
+-2.4745628682725886
+
+
+
+
+
+
+
+trainiert für inputgate auf event Rechter Bounce
+-16.194079959426855
+20.766436643053154
+-14.830852199806408
+17.548254889985017
+35.950182992785564
+9.094135428148741
+
+trainiert für forgetgate auf event Rechter Bounce
+-0.16229468127071547
+4.956593386093047E-4
+-0.3338837758880806
+0.9190252929028668
+-0.21609210254541814
+0.07040156423040558
+
+trainiert für outputgate auf event Rechter Bounce
+7.2329114140187185
+20.248646260149226
+-3.0059856344336833
+-17.81319382084981
+-9.553338546424488
+7.854060243818821
+
+
+
+
+
+
+
+
+trainiert für inputgate auf event Unterer Bounce
+0.10916058340690207
+-0.11564024263123238
+0.040145545896574666
+0.11365822948788848
+-0.07923156350124902
+-0.020850989876536285
+
+trainiert für forgetgate auf event Unterer Bounce
+0.016857894922265863
+-0.04526646911602141
+0.20161209997183346
+0.16450719598916236
+-0.12247286061303626
+0.015011851485904639
+
+trainiert für outputgate auf event Unterer Bounce
+-0.19965586695835646
+0.5377172137463062
+0.327758170808917
+-0.40183550340255975
+-0.36796112216038646
+-0.07651278766717565
+
+
+
+
+
+
+trainiert für inputgate auf event Oberer Bounce
+13.36573186433018
+-15.469412133804076
+7.696483124991037
+-15.426513067211829
+-27.618342032773192
+-5.751104478760767
+
+trainiert für forgetgate auf event Oberer Bounce
+0.30405163595073165
+0.01435763586480336
+-0.14559365728604506
+-1.1426409361058547
+-0.058169974191892
+0.5775612205010372
+
+trainiert für outputgate auf event Oberer Bounce
+1.9515808180076126
+-14.080560969413275
+-5.136953168311662
+11.409853720034585
+8.429820494846572
+-0.5521396802599616
+
+hätte man vielleicht nur die fälle nehmen sollen wo entsprechend das event 1 ist, bzw das wo es 0 ist? wir haben über alle 300 aufsummiert.
+

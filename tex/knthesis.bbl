@@ -1,9 +1,84 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{bib:number}
+\url{en.wikipedia.org/wiki/List_of_animals_by_number_of_neurons}.
+\newblock abgerufen am 13.06.2017.
+
+\bibitem{bib:neuron}
+\url{online.science.psu.edu/bisc004_activewd001/node/1907}.
+\newblock abgerufen am 10.05.2017.
+
+\bibitem{bib:mlp}
+\url{cs.us.es/~fsancho/?e=135}.
+\newblock abgerufen am 13.06.2017.
+
+\bibitem{bib:lstm3}
+K.~Cho, B.~van Merrienboer, C.~Gulcehre, D.~Bahdanau, F.~Bougares, H.~Schwenk,
+  and Y.~Bengio.
+\newblock Learning phrase representations using rnn encoder--decoder for
+  statistical machine translation.
+\newblock In {\em Proceedings of the 2014 Conference on Empirical Methods in
+  Natural Language Processing (EMNLP)}, pages 1724--1734, 2014.
+
+\bibitem{bib:adam}
+J.~B. Diederik P.~Kingma.
+\newblock Adam: A method for stochastic optimization.
+\newblock In {\em International Conference on Learning Representations}, pages
+  1--13, 2015.
+
+\bibitem{bib:peep}
+F.~Gers and J.~Schmidhuber.
+\newblock Recurrent nets that time and count.
+\newblock 2000.
 
 \bibitem{bib:graves}
 A.~Graves and J.~Schmidhuber.
 \newblock Framewise phoneme classification with bidirectional lstm and other
   neural network architectures.
 \newblock In {\em Neural Networks}, pages 602--610, 2005.
+
+\bibitem{bib:aneuron}
+S.~Haykin.
+\newblock {\em Neural Networks: A Comprehensive Foundation}.
+\newblock 1994.
+
+\bibitem{bib:vgp}
+S.~Hochreiter.
+\newblock The vanishing gradient problem during learning recurrent neural nets
+  and problem solutions.
+\newblock In {\em International Journal of Uncertainty, Fuzziness and
+  Knowledge-Based Systems}, pages 107--117, 1998.
+
+\bibitem{bib:lstm}
+S.~Hochreiter and J.~Schmidhuber.
+\newblock Long short-term memory.
+\newblock In {\em Neural Computation}, pages 1735--1780, 1997.
+
+\bibitem{bib:egp}
+R.~Pascanu, T.~Mikolov, and Y.~Bengio.
+\newblock On the difficulty of training recurrent neural networks.
+\newblock 1994.
+
+\bibitem{bib:sgd}
+N.~Qian.
+\newblock On the momentum term in gradient descent learning algorithms.
+\newblock In {\em Neural Networks : The Official Journal of the International
+  Neural Network Society}, pages 145--151, 1999.
+
+\bibitem{bib:bptt}
+P.~Werbos.
+\newblock Backpropagation through time: what it does and how to do it.
+\newblock In {\em Proceedings of the IEEE}, pages 1550 -- 1560, 1990.
+
+\bibitem{bib:est1}
+S.~B.~R. Zacks, Speer.
+\newblock Event perception: a mind-brain perspective.
+\newblock In {\em Psychological Bulletin}, pages 273--293, 2007.
+
+\bibitem{bib:est}
+J.~M. Zacksi and K.~M. Swallow.
+\newblock Event segmentation.
+\newblock In {\em Current Directions in Psychological Science}, pages 80--84,
+  2007.
 
 \end{thebibliography}

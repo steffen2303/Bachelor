@@ -2,50 +2,127 @@
 \label{ch:untersuchung}
 Nun haben wir also Neuronale Netz mit LSTM Speicherzellen auf verschiedene Fälle des Bouncing Ball Szenarios trainiert. Wenn man dabei die internen Aktivierungen der Gates über die Zeit betrachtet und vergleicht mit dem Verlauf der Ereignisse der trainierten Aktion, findet man Zusammenhänge. In diesem Kapitel werden wie erst Beispiele für solche Zusammenhänge betrachten, dann schauen wie man diese automatisiert finden kann. Zum Schluss schauen wir noch, wie wir mit Hilfe von Backpropagation through time Vorhersagen über Events anhand der Gate-Aktivierungen treffen können und wir dieselbe Technik nutzen können um die Eventbeziehungen zu klassifizieren.
 \section{Gate-Aktivierungen}
-Die Möglichkeiten wie sich eine LSTM über die Zeit verhalten kann sind zahlreich, noch zahlreicher die Möglichkeiten wie mehrere von ihnen miteinander interagieren. 
+Die Möglichkeiten wie sich eine LSTM über die Zeit verhalten kann sind zahlreich, noch zahlreicher die Möglichkeiten wie mehrere von ihnen miteinander interagieren. \cite{bib:graves}. 
 
 
 
-\\ 
-\begin{tabular}{|c|c|c||c|c|c|}
-\multicolumn64}{|c|}{O = A+0.5B; P = B OR (1-C); Q = A XOR C} \\	\hline
-A & B & C & O & P & Q \\ \hline
-0 & 0 & 0 & 0 & 1 & 0\\ \hline
-0 & 0 & 1 & 0 & 0 & 1\\ \hline
-0 & 1 & 0 & 0.5 & 1 & 0\\ \hline
-0 & 1 & 1 & 0.5 & 1 & 1\\ \hline
-1 & 0 & 0 & 1   & 1 & 1\\ \hline
-1 & 0 & 1 & 1   & 0 & 0\\ \hline
-1 & 1 & 0 & 1.5 & 1 & 1\\ \hline
-1 & 1 & 1 & 1.5 & 1 & 0\\ \hline \hline
-\multicolumn{6}{|c|}{Backpropagation für O:=-1} \\ \hline
-$\sum A $ & $\sum B $ &$\sum C $ & -1 & P & Q \\ \hline
-2.64 & 1.35 & -1.5*$ 10^{-4} $ & -1 & P & Q \\ \hline
-\multicolumn{6}{|c|}{Backpropagation für P:=-1} \\ \hline
-$\sum A $ & $\sum B $ &$\sum C $ & O & -1 & Q \\ \hline
-9*$ 10^{-4} $& 0.07 & -0.07 & O & -1 & Q \\ \hline
-\multicolumn{6}{|c|}{Backpropagation für Q:=-1} \\ \hline
-$\sum A $ & $\sum B $ &$\sum C $ & O & P & -1 \\ \hline
--0.81 & $ 10^{-3} $ & 0.81$ & O & P & -1 \\ \hline
-\end{tabular}
-\hline
- 
+
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.9\textwidth, height=400px]{pics/act1.png}	
-	\caption{Der 1D Fall mit Ballposition als Netzinput und nächste Geschwindigkeit als Trainingsziel, gelernt von einem 1-1-1 Netz.  }
+	\includegraphics[width=\textwidth, height=400px]{pics/act1.png}	
+	\caption{TODO }
 	\label{img:act1}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth, height=400px]{pics/act2.png}	
+	\caption{TODO }
+	\label{img:act2}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth, height=400px]{pics/act3.png}	
+	\caption{TODO }
+	\label{img:act3}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth, height=400px]{pics/act4.png}	
+	\caption{TODO }
+	\label{img:act4}
 \end{figure}
 
 
-\cite{bib:graves}
+
+
+
+
 
 \section{Automatisierte Klassifizierung}
+\begin{table}
+\centering
+\begin{tabular}{|c|c|c||c|c|c|}
 
+	\hline
+	\multicolumn{6}{|c|}{O = A+0.5B; P = B OR (1-C); Q = A XOR C} \\	\hline
+	A & B & C & O & P & Q \\ \hline
+	0 & 0 & 0 & 0 & 1 & 0\\ \hline
+	0 & 0 & 1 & 0 & 0 & 1\\ \hline
+	0 & 1 & 0 & 0.5 & 1 & 0\\ \hline
+	0 & 1 & 1 & 0.5 & 1 & 1\\ \hline
+	1 & 0 & 0 & 1   & 1 & 1\\ \hline
+	1 & 0 & 1 & 1   & 0 & 0\\ \hline
+	1 & 1 & 0 & 1.5 & 1 & 1\\ \hline
+	1 & 1 & 1 & 1.5 & 1 & 0\\ \hline \hline
+	\multicolumn{6}{|c|}{Backpropagation für O:=-1} \\ \hline
+	$\sum \delta_{A} $ & $\sum \delta_{B} $ &$\sum \delta_{C} $ & Q & P & Q \\ \hline
+	2.64 & 1.35 & -1.5*$ 10^{-4} $ & -1 & P & Q \\ \hline
+	\multicolumn{6}{|c|}{Backpropagation für P:=-1} \\ \hline
+	$\sum \delta_{A} $ & $\sum \delta_{B} $ &$\sum \delta_{C} $ & O & P & Q \\ \hline
+	9*$ 10^{-4} $& 0.07 & -0.07 & O & -1 & Q \\ \hline
+	\multicolumn{6}{|c|}{Backpropagation für Q:=-1} \\ \hline
+	$\sum \delta_{A} $ & $\sum \delta_{B} $ &$\sum \delta_{C} $ & O & P & Q \\ \hline
+	0.81 & $ 2*10^{-3} $ & 0.81 & O & P & -1 \\ \hline
 
-
-
+\end{tabular}
+	\caption{Krasse Tabelle}
+\end{table}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.6\textwidth, height=160px]{pics/diagramm.png}	
+	\caption{TODO }
+	\label{img:diagramm}
+\end{figure}
+\begin{table}
+	\centering
+\begin{tabular}{|c|c|c|c|c|}
+	\hline
+	\multicolumn{5}{|c|}{Input Gate} \\	\hline
+	Zellennummer & LO & RO & RU & LU \\ \hline
+	1 & 0.049 & 13 & -16 & 0.11 \\ \hline
+	2 & -0.77 & -15 & 20 & -0.12 \\ \hline
+	3 & 2.1 & 7.7 & -15 & 0.04 \\ \hline
+	4 & 0.11 & -15 & 18 & 0.11 \\ \hline
+	5 & -1.2 & -27 & 36   & -0.080 \\ \hline
+	6 & -0.89 & -5.8 & 9   & -0.02 \\ \hline\hline
+	\multicolumn{5}{|c|}{Forget Gate} \\	\hline
+	Zellennummer & LO & RO & RU & LU  \\ \hline
+	1 & 0.046 & 0.30 & -0.16 & 0.017 \\ \hline
+	2 & 0.048 & 0.014 & 0 & -0.045 \\ \hline
+	3 & 0.071 & -0.14 & -0.33 & 0.20 \\ \hline
+	4 & -0.20 & -1.14 & 0.92 & 0.16 \\ \hline
+	5 & 0.11 & -0.05 & -0.21   & -0.12 \\ \hline
+	6 & -0.18 & 0.58 & 0.070   & 0.015 \\ \hline\hline
+	\multicolumn{5}{|c|}{Output Gate} \\	\hline
+	Zellennummer & LO & RO & RU & LU \\ \hline
+	1 & -5.9 & 2.0 & 7.2 & -0.20 \\ \hline
+	2 & 10 & -14 & 20 & 0.54 \\ \hline
+	3 & 8.5 & -5.1 & -3 & 0.33 \\ \hline
+	4 & -8.2 & 11 & -18 & -0.40 \\ \hline
+	5 & -7.3 & 8.4 & -9,6   & -0.37 \\ \hline
+	6 & -2.5 & -0.55 & 7.9   & -0.077 \\ \hline\hline
+\end{tabular}
+\caption{Krasse Tabelle}
+\end{table}
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth, height=200px]{pics/inputgate.png}	
+	\caption{TODO }
+	\label{img:inputgate}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth, height=200px]{pics/forgetgate.png}	
+	\caption{TODO }
+	\label{img:forgetgate}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth, height=200px]{pics/outputgate.png}	
+	\caption{TODO }
+	\label{img:outputgate}
+\end{figure}
 \section{Analyse mit BPTT}
 
 periodisch: sieht man immer, das nicht das problem, sogar klar. overfitting
@@ -99,6 +176,9 @@ Erklären wie die Trainingsdaten für das mlp aussehen
 
 Vergleiche mlp das next und last event sagt
 Vorhersage: last event exakt deutlich, next event unklarer das ob oben oder rechts als nächstes getroffen wird vom vall abhängt wenn man von links unten kommt-
+
+testcode:
+est: prediction error löst event unterteilung aus. würde man sich den prediction error mit ausgeben lassen. ausgabe soll diskrepanz zwischen target und output der anderen vorhersagen. Oder aber output-target diskrepanz dem input hinzufügen, damit das netz darauf arbeiten kann. 
 
 Wichtig:
 Vergleiche im LSTM die bedeutung der einzelnen Gates auf EST. Zentral

@@ -1,0 +1,14 @@
+\select@language {ngerman}
+\contentsline {chapter}{\numberline {1}Grundlagen}{1}
+\contentsline {section}{\numberline {1.1}Neuronale Netze}{1}
+\contentsline {section}{\numberline {1.2}Rekurrente Neuronale Netze}{5}
+\contentsline {section}{\numberline {1.3}Das Vanishing Gradient Problem}{6}
+\contentsline {section}{\numberline {1.4}LSTM}{7}
+\contentsline {section}{\numberline {1.5}Event Segmentation Theory}{9}
+\contentsline {chapter}{\numberline {2}Implementierung}{11}
+\contentsline {section}{\numberline {2.1}Das Bouncing Ball Szenario}{11}
+\contentsline {section}{\numberline {2.2}Parameter und Testf\IeC {\"a}lle}{12}
+\contentsline {chapter}{\numberline {3}Gates und Eventgrenzen}{21}
+\contentsline {section}{\numberline {3.1}Gate-Aktivierungen}{21}
+\contentsline {section}{\numberline {3.2}Automatisierte Klassifizierung}{21}
+\contentsline {section}{\numberline {3.3}Analyse mit BPTT}{21}
